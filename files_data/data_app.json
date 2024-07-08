@@ -1,0 +1,38 @@
+{
+    "app_name": "FS22 Empire",
+    "admin_state": 0,
+    "curr_language": "de",
+    "curr_game_name": "",
+    "curr_game_data": {
+        "curr_player": "",
+        "tot_p_time": "0",
+        "number_of_saved_games": 0,
+        "last_game": "",
+        "days_per_month": 1,
+        "time_scale": 1
+    },
+    "curr_player_name": "",
+    "security_state": 0,
+    "saved_players": [
+        "Hanspeter Fl\u00fctsch",
+        "A",
+        "",
+        "",
+        ""
+    ],
+    "img_brands": {
+        "fiat": "img_logo_fiat.png",
+        "international": "img_logo_international.png",
+        "lizard": "img_logo_lizard.png",
+        "mack": "img_logo_mack.png",
+        "man": "img_logo_man.png",
+        "tatra": "img_logo_tatra.png",
+        "volvo": "img_logo_volvo.png"
+    },
+    "img_maps":{
+        "sosnovka": "img_map_sosnovka.png"
+    },
+    "img_splashscreens":{
+        "sosnovka": "img_splash_sosnovka.png"
+    }
+}

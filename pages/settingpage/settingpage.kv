@@ -1,0 +1,124 @@
+#settingpage.kv
+<SettingPage>:
+## grauer Rand rund herum
+    BoxGrey2:
+        padding: 1
+## gesamte Box mit den diversen widgets
+        BoxBlack:
+            orientation: 'vertical'
+            spacing: 1
+# Start Titelbox
+            BoxTitle:
+                id: box_tit
+# Start Middlebox
+            BoxBlack:
+                id: box_mid
+                name: 'box_middle_page_2'
+                padding: 1
+                BoxGrey2:
+                    padding: 1
+                    spacing: 1
+###
+# Box  Left. Game and user settings
+                    BoxBlack:
+                        padding: 1
+                        BoxGrey2:
+                            padding: 1
+                            spacing: 1
+                            orientation: 'vertical'
+# Linke Box oberer Teil                            
+                            BoxBlack:
+                                padding: 1
+                                BoxGrey1:
+                                    padding: 1
+                                    orientation: 'vertical'
+                                    BoxBlack:
+                                        size_hint_y: 0.1
+# Label mit Titel für die Spieleinstellungen                                        
+                                        LabelTitel:
+                                            id: lab_tit_sett_game
+                                    BoxGrey2:
+                                        padding: 1
+                                        spacing: 1
+                                        BoxGrey1:
+                                            orientation: 'vertical'
+                                            spacing: 2
+                                            BoxBlack:
+                                                size_hint_y: 0.2
+                                                LabelGrey1:
+                                                    id: lab_time_scale
+                                            BoxBlack:
+                                                size_hint_y: 0.2
+                                                LabelGrey1:
+                                                    id: lab_d_p_month
+                                            BoxBlack:
+                                        BoxBlack:
+                                            orientation: 'vertical'
+                                            spacing: 1
+                                            
+
+# Linke Box unterer Teil                            
+                            BoxBlack:
+                                padding: 1
+                                BoxGrey1:
+                                    orientation: 'vertical'
+                                    BoxBlack:
+                                        size_hint_y: 0.1
+# Label mit dem Titel für allgemeine Einstellungen                                        
+                                        LabelTitel:
+                                            id: lab_tit_sett_general
+                                    BoxBlack:
+###
+# Box Right. Administrator setting
+                    BoxBlack:
+                        padding: 1
+                        BoxGrey2:
+                            orientation:'vertical'
+                            padding: 2
+                            spacing: 2
+                            BoxBlack:
+                                size_hint_y: 0.1
+# Titel Administartor Settings
+                                LabelTitel:
+                                    id: lab_tit_admin_settings
+                                    font_size: self.height * 0.6
+                            BoxBlack:
+                                size_hint_y: 0.1
+                                BoxGrey1:
+                                    padding: 1
+                                    spacing: 2
+                                    BoxBlack:
+                                        padding: 2
+# Beschreibung Admin Settings                                    
+                                        LabelTitel:
+                                            id: lab_tit_admin_sett_descr
+                                            font_size: self.height * 0.3
+                                    BoxBlack:
+                                        size_hint_x: 0.4
+                                        padding: 4
+# Admin Button
+                                        ButRectThin:
+                                            id: but_admin
+                                            halign: 'center'
+                                            on_release: root.adminbutton_pressed()
+                            BoxBlack:
+                                padding: 1
+                                size_hint_y: 0.1
+# Button Neuer LKW ins Spiel einfügen                                
+                                ButtonGrey:
+                                    id: but_new_lkw
+                                    font_size: self.height * 0.5
+                                    on_release: app.open_new_lkw_popup()
+
+                            BoxBlack:
+                                padding: 1
+                                size_hint_y: 0.1
+# Button Neuer LKW ins Spiel einfügen                                
+                                ButtonGrey:
+                                    id: but_new_tractor
+                                    font_size: self.height * 0.5
+                                    on_release: app.open_new_tractor_popup()
+                            BoxBlack:
+# Start Bottombox
+            BoxBottom:
+                id: box_bottom

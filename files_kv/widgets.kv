@@ -1,0 +1,178 @@
+# widgets.kv
+<BoxShowSavedGames@BoxBlack>:
+    BoxGrey1:
+        padding: 1
+        BoxBlack:
+            padding: 1
+            BoxGrey2:
+                padding: 1
+                BoxGrey3:
+                    padding: 2
+                    spacing: 2
+                    BoxBlack:
+                        padding: 2
+                        size_hint_x: 0.2
+                        Image:
+                            id: img_map
+                    BoxBlack:
+                        orientation: 'vertical'
+                        padding: 2
+                        BoxBlack:
+                            LabelTitel:
+                                id: l_tit_game_name
+                            LabelGrey1:
+                                id: l_game_name
+
+                    BoxBlack:
+                        orientation: 'vertical'
+                        padding: 4, 10, 4, 10
+                        spacing: 20
+                        size_hint_x: 0.1
+                        ButRectThin:
+                            id: b_load_game
+                            halign: 'center'
+                        ButRectThin:
+                            id: b_del_game
+                            halign: 'center'
+###
+# WidgetBox für daten anzeige
+# Box Userinfo
+<BoxInfo@BoxLayout>:
+    padding: 1
+    BoxGrey1:
+        padding: 2
+        BoxGrey2:
+            padding: 2
+            orientation: 'vertical'
+            BoxBlack:
+                size_hint_y: 0.15
+# Label Userinfo Titel                                        
+                LabelTitel:
+                    id: lab_tit_user_info
+            BoxGrey2:
+                BoxGrey1:
+                    orientation: 'vertical'
+                    padding: 2, 2, 0, 2
+                    spacing: 3
+                    size_hint_x: 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r0_c0
+                                font_size: self.height * 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r1_c0
+                                font_size: self.height * 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r2_c0
+                                font_size: self.height * 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r3_c0
+                                font_size: self.height * 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r4_c0
+                                font_size: self.height * 0.4
+                    BoxBlueFS22:
+                        padding:2, 0, 0, 2
+                        BoxBlack:
+                            LabJuraMedium:
+                                id: lab_r5_c0
+                                font_size: self.height * 0.4
+
+                BoxGrey1:
+                    orientation: 'vertical'
+                    padding: 0, 2, 2, 2
+                    spacing: 3
+                    size_hint_x: 0.6
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r0_c1
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r1_c1
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r2_c1
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r3_c1
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r4_c1
+                    BoxBlueFS22:
+                        padding:0, 0, 0, 2
+                        BoxBlack:
+                            LabJuraLight:
+                                id: lab_r5_c1
+
+
+###
+# Titelbox
+<BoxTitle@BoxGrey1>:
+    padding: 1
+    size_hint_y: 0.05
+    BoxBlack:
+        padding: 1
+        BoxGrey1:
+            padding: 1
+            BoxBlack:
+                padding: 1
+                size_hint_x: 0.1
+                Logo_Main:
+            BoxBlack:
+# Label für Seitentitel
+                LabelTitel:
+                    id: lab_tit
+                    font_size: self.height * 0.8
+                    halign: 'center'
+                    color: grey3
+            BoxBlack:
+                size_hint_x: 0.15
+###
+# Bottombox
+<BoxBottom@BoxGrey1>:
+    padding: 2
+    size_hint_y: 0.05
+    BoxBlack:
+        padding: 10, 3, 10, 3
+        spacing: 10
+        BoxBlack:
+            size_hint_x: 0.3
+            Label:
+                text: app.app_version
+        BoxBlack:
+        BoxBlack:
+            size_hint_x: 0.3
+            ButtonGrey:
+                id: but_settings
+                font_size: self.height * 0.5
+                on_release: app.change_Screen('left', 'setting_page') if app.scr_man.current == 'start_page' else app.change_Screen('right', 'start_page')
+        BoxBlack:
+            size_hint_x: 0.3
+            ButtonGrey:
+                id: but_quit
+                font_size: self.height * 0.5
+                on_release: app.stop()

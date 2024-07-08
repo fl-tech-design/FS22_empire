@@ -1,0 +1,119 @@
+<Page4>:
+## grauer Rand rund herum
+    BoxGrey2:
+        padding: 1
+## gesamte Box mit den diversen widgets
+        BoxBlack:
+            orientation: 'vertical'
+            spacing: 1
+# Start Titelbox
+            BoxTitle:
+                id: box_title
+# Start Middlebox
+            BoxBlack:
+                id: box_mid
+                name: 'box_middle_page_'
+                orientation: 'vertical'
+                padding: 2
+                BoxGrey2:
+                    padding: 2
+                    spacing: 2
+###
+                    BoxBlack:
+                        size_hint_x: 0.4
+                        padding: 2
+                        BoxGrey2:
+                            padding: 2
+                            BoxBlack:
+                                BoxGrey1:
+                                    orientation: 'vertical'
+                                    padding: 1
+                                    spacing: 1
+# Box für Markenlogo                                    
+                                    BoxBlack:
+                                        size_hint_y: 0.1
+                                        Image:
+                                            id: img_brand
+                                            fit_mode: 'contain'
+ 
+                                    BoxBlack:
+                                        BoxGrey1:
+                                            padding: 1
+                                            spacing: 1
+# linke Box im datenfeld
+                                            BoxBlack:
+                                                orientation: 'vertical'
+                                                spacing: 2
+                                                LabelTitel:
+                                                    id: lab_key_brand
+                                                    font_size: self.height * 0.3
+                                                LabelTitel:
+                                                    id: lab_key_model
+                                                    font_size: self.height * 0.3
+                                                LabelTitel:
+                                                    id: lab_key_power
+                                                    font_size: self.height * 0.3
+                                                LabelTitel:
+                                                    id: lab_key_fuel
+                                                    font_size: self.height * 0.3
+# rechte Box im Datenfeld
+                                            BoxBlack:
+                                                orientation: 'vertical'
+                                                spacing: 2
+                                                Label:
+                                                    id: lab_val_brand
+                                                    font_size: self.height * 0.3
+                                                Label:
+                                                    id: lab_val_model
+                                                    font_size: self.height * 0.3
+                                                Label:
+                                                    id: lab_val_power
+                                                    font_size: self.height * 0.3
+                                                Label:
+                                                    id: lab_val_fuel
+                                                    font_size: self.height * 0.3
+# Buttonbox zum Seitenwechsel                                        
+                                    BoxBlack:
+                                        size_hint_y: 0.1
+                                        padding: 2
+                                        spacing: 5
+                                        ButtonGrey:
+                                            id: but_buy
+                                            color: green1
+# Buttonbox zum Seitenwechsel                                        
+                                    BoxBlack:
+                                        size_hint_y: 0.1
+                                        padding: 2
+                                        spacing: 5
+                                        ButtonGrey:
+                                            text: '<<'
+                                            on_release: root.decr_curr_index()
+                                        ButtonGrey:
+                                            text: '>>'
+                                            on_release: root.incr_curr_index()
+###
+# Box für Bild von Truck                        
+                    BoxBlack:
+                        padding: 2
+                        BoxGrey2:
+                            padding: 2
+                            BoxBlack:
+                                Image:
+                                    id: img_show_truck
+                                    fit_mode: 'fill'
+###
+# Box am unteren Ende der Seite
+            BoxBlack:
+                id: box_bott_p4
+                name: 'box_bott_page_4'
+                orientation: 'vertical'
+                padding: 2
+                size_hint_y: 0.05
+                BoxGrey2:
+                    padding: 2
+                    BoxBlack:
+                        padding: 100,2,100,2
+                        ButtonGrey:
+                            id: but_back
+                            text: "zurück"
+                            on_release: app.change_Screen('left', 'page_2')

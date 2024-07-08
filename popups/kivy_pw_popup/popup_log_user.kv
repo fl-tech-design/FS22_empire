@@ -1,0 +1,45 @@
+<LoginPopup@Popup>:
+    auto_dismiss: False
+    title: app.first_letter_upper(app.lab_txt['login'])
+    size_hint: (0.3, 0.2)
+
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.FONT_DIR + 'Jura-Medium.otf'
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxGrey1:
+        orientation: 'vertical'
+        padding: 2
+        spacing: 2
+        LabelTitel:
+            id: lab_username
+            text: app.curr_u_name
+            color: fs22_d
+        TextInput:
+            id: password_input
+            hint_text: 'Password'
+            hint_text_color: fs22_d
+            background_color: grey2
+            cursor_color: fs22_n
+            foreground_color: fs22_d
+            font_size: self.height * 0.5
+            padding: 10, 10, 0, 0
+            password: True
+            multiline: False
+        BoxGrey1:
+            padding: 4
+            spacing: 4
+            ButRectThin:
+                id: login_button
+                text: app.first_letter_upper(app.lab_txt['login'])
+                font_size: self.height * 0.5
+                halign: 'center'
+                on_release: root.validate_user()
+            ButRectThin:
+                id: cancel_button
+                text: app.first_letter_upper(app.lab_txt['cancel'])
+                font_size: self.height * 0.5
+                halign: 'center'
+                on_release: root.dismiss()

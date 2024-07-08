@@ -1,0 +1,128 @@
+# components.kv
+#: import constants constants
+
+###
+# Vordefinierte Buttons.
+###
+<ButtonGrey@Button>:
+    canvas.before:
+        Color:
+            rgba: fs22_n if self.state == 'normal' else fs22_d
+        Line:
+            width: 1
+            rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.5
+
+<ButRoundThin@Button>:
+    canvas.before:
+        Color:
+            rgba: fs22_n if self.state == 'normal' else fs22_d
+        Line:
+            width: 1
+            rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.5
+    
+
+<ButRoundFat@Button>:
+    canvas.before:
+        Color:
+            rgba: fs22_n if self.state == 'normal' else fs22_d
+        Line:
+            width: 2
+            rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.5
+
+<ButRectThin@Button>:
+    canvas.before:
+        Color:
+            rgba: fs22_n if self.state == 'normal' else fs22_d
+        Line:
+            width: 1
+            rectangle: (self.x, self.y, self.width, self.height)
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.4
+    text_size: self.size
+    halign: 'left'
+    valign: 'center'
+    padding: 10, 0, 0, 0
+
+
+
+###
+# Vordefinierte Labels.
+###
+<LabelTitel@Label>:
+    color: grey3
+    font_name: constants.FONT_DIR + 'cmunobx.ttf'
+    font_size: self.height * 0.5
+    text_size: self.size
+    halign: 'left'
+    valign: 'center'
+    padding: 10, 0, 0, 0
+
+<LabelGrey1@Label>:
+    text_size: self.size
+    halign: 'left'
+    valign: 'middle'
+    color: grey1
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.5
+    padding: 10, 0, 0, 0
+<LabJuraLight@Label>:
+    text_size: self.size
+    halign: 'left'
+    valign: 'middle'
+    color: grey3
+    font_name: constants.FONT_DIR + 'Jura-Light.otf'
+    font_size: self.height * 0.6
+    padding: 10, 0, 0, 0,
+<LabJuraMedium@Label>:
+    text_size: self.size
+    halign: 'left'
+    valign: 'middle'
+    color: grey3
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.65
+    padding: 10, 0, 0, 0,
+<LabCsoon@Label>:
+    font_name: constants.FONT_DIR + "BOYCOTT_.ttf"
+    font_size: dp(40)
+    color: yellow1
+    text: "Comming soon..."
+###
+# Vordefinierte Label-Link's. Aufbau auf einem Label mit markup.
+###
+<ButtonQuit@Label>:
+    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_size: self.height * 0.6
+    markup: True
+    text: '[ref=world][color=#1f1f1f]QUIT[/color][/ref]'
+<ButtonHelp@Button>:
+    canvas.before:
+        Color:
+            rgba: app.a_conf.colors['but_down'] if self.state == 'normal' else app.a_conf.colors['but_norm']
+        Line:
+            width: 2
+            ellipse: (self.x, self.y, self.width, self.height)
+    markup: True
+    text: '[b]?[/b]'
+    background_color: 0,0,0,0
+    color: app.a_conf.colors['font_light'] if self.state == 'normal' else app.a_conf.colors['font_dark']
+###
+# Vordefinierte Bilder
+###
+<Logo_Fltech@Image>:
+    source: constants.IMG_DIR + 'logo-fl-tech.png'
+<Logo_Main@Image>:
+    source: constants.PATH_TO_MAINLOGO
