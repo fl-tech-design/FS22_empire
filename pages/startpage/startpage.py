@@ -3,7 +3,7 @@ from kivy.lang import Builder
 
 from constants import *
 
-from popups.kivy_pw_popup.user_manager import load_user_data
+from popups.popup_password.user_manager import load_user_data
 
 Builder.load_file(PATH_KV_STARTPAGE)
 
@@ -20,27 +20,27 @@ class StartPage(Screen):
         self.ids.box_sg_4.ids.b_load_game.name = "b_gs_4_start"
         self.ids.box_sg_5.ids.b_load_game.name = "b_gs_5_start"
         self.ids.box_sg_1.ids.b_load_game.bind(
-            on_release=lambda instance: self.but_start_game_pressed(
+            on_release=lambda dt: self.but_start_game_pressed(
                 self.ids.box_sg_1.ids.b_load_game.name
             )
         )
         self.ids.box_sg_2.ids.b_load_game.bind(
-            on_release=lambda instance: self.but_start_game_pressed(
+            on_release=lambda dt: self.but_start_game_pressed(
                 self.ids.box_sg_2.ids.b_load_game.name
             )
         )
         self.ids.box_sg_3.ids.b_load_game.bind(
-            on_release=lambda instance: self.but_start_game_pressed(
+            on_release=lambda dt: self.but_start_game_pressed(
                 self.ids.box_sg_3.ids.b_load_game.name
             )
         )
         self.ids.box_sg_4.ids.b_load_game.bind(
-            on_release=lambda instance: self.but_start_game_pressed(
+            on_release=lambda dt: self.but_start_game_pressed(
                 self.ids.box_sg_4.ids.b_load_game.name
             )
         )
         self.ids.box_sg_5.ids.b_load_game.bind(
-            on_release=lambda instance: self.but_start_game_pressed(
+            on_release=lambda dt: self.but_start_game_pressed(
                 self.ids.box_sg_5.ids.b_load_game.name
             )
         )

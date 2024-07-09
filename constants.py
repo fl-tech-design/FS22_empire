@@ -26,7 +26,7 @@ PATH_TO_TRUCK_DATA = os.path.join(os.path.dirname(__file__), 'files_data/data_lk
 
 PATH_KV_STARTPAGE = os.path.join(os.path.dirname(__file__), 'pages/startpage/startpage.kv')
 PATH_KV_SETTINGPAGE = os.path.join(os.path.dirname(__file__), 'pages/settingpage/settingpage.kv')
-PATH_KV_PAGE_4 = os.path.join(os.path.dirname(__file__), 'pages/page4/page4.kv')
+PATH_KV_PAGE_4 = os.path.join(os.path.dirname(__file__), 'pages/buyitempage/buyitempage.kv')
 
 USER_DATA_FILE = os.path.join(os.path.dirname(__file__),'files_data/user_data.json')
 

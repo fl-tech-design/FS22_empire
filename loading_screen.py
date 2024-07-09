@@ -30,7 +30,7 @@ class LoadingScreen(Screen):
 
         # Statuslabel
         self.status_label = Label(
-            text=self.txt_lab["loading..."],
+            text=self.txt_lab["loading"] + "...",
             size_hint=(0.8, 0.1),
             pos_hint={"x": 0.1, "y": 0.18},
         )
@@ -50,7 +50,7 @@ class LoadingScreen(Screen):
         time.sleep(0.05)
         self.loading_progress += 10
         self.progress_bar.value = self.loading_progress
-        self.status_label.text = f"Loading... {self.loading_progress}%"
+        self.status_label.text = f'{self.txt_lab["loading"]}...  {self.loading_progress}%'
 
         if self.loading_progress >= 100:
             Clock.unschedule(self.load_data)

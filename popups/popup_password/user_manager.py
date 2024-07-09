@@ -1,9 +1,6 @@
 # user_manager.py
-
 import json
 import bcrypt
-
-from datetime import datetime
 
 from constants import *
 

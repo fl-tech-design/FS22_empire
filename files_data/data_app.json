@@ -15,7 +15,7 @@
     "security_state": 0,
     "saved_players": [
         "Hanspeter Fl\u00fctsch",
-        "A",
+        "",
         "",
         "",
         ""
@@ -29,10 +29,28 @@
         "tatra": "img_logo_tatra.png",
         "volvo": "img_logo_volvo.png"
     },
-    "img_maps":{
+    "img_maps": {
         "sosnovka": "img_map_sosnovka.png"
     },
-    "img_splashscreens":{
+    "img_splashscreens": {
         "sosnovka": "img_splash_sosnovka.png"
+    },
+    "fixed_map_data": {
+        "sosnovka":{"fixed_factories": {
+                    "app_pics/img_signs/arrow1.png_0": {
+                        "image": "app_pics/img_signs/arrow1.png",
+                        "pos": [
+                            767,
+                            723
+                        ]
+                    },
+                    "app_pics/img_signs/arrow4.png_1": {
+                        "image": "app_pics/img_signs/arrow4.png",
+                        "pos": [
+                            1048,
+                            917
+                        ]
+                    }
+                }}
     }
 }

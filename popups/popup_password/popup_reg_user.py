@@ -7,13 +7,13 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.core.window import Window
 from kivy.clock import Clock
-from popups.kivy_pw_popup.user_manager import register_user, validate_user
+from popups.popup_password.user_manager import register_user, validate_user
 
 from kivy.lang import Builder
 
 from constants import IMG_POPUPS
 
-Builder.load_file(IMG_POPUPS + "kivy_pw_popup/popup_reg_user.kv")
+Builder.load_file(IMG_POPUPS + "popup_password/popup_reg_user.kv")
 
 class RegisterPopup(Popup):
     def __init__(self, app, **kwargs):

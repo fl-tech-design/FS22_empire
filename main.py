@@ -6,25 +6,23 @@ from kivy.clock import Clock
 
 from control_data import DataControl
 
-from map_layout import MapLayout
+from pages.mappage.mappage import MapLayout
 
 from loading_screen import LoadingScreen
 
 from popups.popup_new_lkw import Popup_New_Lkw
 from popups.popup_sel_comp import CompanySelectionPopup
-from popups.popup_new_user import Popup_New_User
 
-from popups.kivy_pw_popup.popup_log_user import LoginPopup
-from popups.kivy_pw_popup.popup_reg_user import RegisterPopup
-from popups.kivy_pw_popup.user_manager import load_user_data
+from popups.popup_password.popup_log_user import LoginPopup
+from popups.popup_password.popup_reg_user import RegisterPopup
+from popups.popup_password.user_manager import load_user_data
 
 from constants import *
 
 from pages.startpage.startpage import StartPage
 from pages.settingpage.settingpage import SettingPage
-from pages.page4.page4 import Page4
+from pages.buyitempage.buyitempage import BuyItemPage
 
-import os
 
 Builder.load_file(PATH_KV_COLORS)
 Builder.load_file(PATH_KV_BOXES)
@@ -138,9 +136,9 @@ class MainApp(App):
         self.scr_man.add_widget(screen)
 
         # Definition Page Four. The "buy new Truck screen"
-        self.page4 = Page4(app)
-        screen = Screen(name="page_4")
-        screen.add_widget(self.page4)
+        self.buy_item_page = BuyItemPage(app)
+        screen = Screen(name="buy_item_page")
+        screen.add_widget(self.buy_item_page)
         self.scr_man.add_widget(screen)
 
         # Definition Page Five. The Mainscreen of the Game
@@ -174,7 +172,7 @@ class MainApp(App):
         elif self.scr_man.current == "setting_page":
             self.setting_page.update_setting_page()
         elif self.scr_man.current == "page_4":
-            self.page4.update_labels()
+            self.buy_item_page.update_labels()
         elif self.scr_man.current == "page_5":
             self.page5.update_Page_5()
 
