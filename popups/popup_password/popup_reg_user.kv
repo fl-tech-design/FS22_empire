@@ -1,11 +1,11 @@
 <RegisterPopup@Popup>:
     auto_dismiss: False
-    title: app.first_letter_upper(app.lab_txt['register_new_user'])
+    title: app.f_let_upper(app.lab_txt['register_new_user'])
     size_hint: (0.3, 0.2)
 
     background_color: fs22_n
     title_size: '23sp'
-    title_font: constants.FONT_DIR + 'Jura-Medium.otf'
+    title_font: constants.DIR_FONTS + 'Jura-Medium.otf'
     title_color: fs22_n
     separator_color: fs22_d
     separator_height: '4dp'
@@ -39,13 +39,13 @@
             spacing: 4
             ButRectThin:
                 id: register_button
-                text: app.first_letter_upper(app.lab_txt['register'])
+                text: app.f_let_upper(app.lab_txt['register'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.register_user()
             ButRectThin:
                 id: cancel_button
-                text: app.first_letter_upper(app.lab_txt['cancel'])
+                text: app.f_let_upper(app.lab_txt['cancel'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.dismiss()

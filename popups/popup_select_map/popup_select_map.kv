@@ -1,0 +1,54 @@
+<PopupSelectMap@Popup>:
+    auto_dismiss: False
+    title: app.f_let_upper(app.lab_txt['select_map'])
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.DIR_FONTS + constants.LABELFONT_M
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxGrey1:
+        padding: 2
+        spacing: 2    
+        BoxGrey2:
+            padding: 2
+            spacing: 2
+            BoxGrey4:
+                padding: 2
+                spacing: 2
+# Start Middle Box                
+                BoxGrey1:
+                    orientation: 'vertical'
+                    padding: 2
+                    spacing: 2
+# Oberer Boxteil
+                    BoxGrey1:
+                        size_hint_y: 0.9
+                        spacing: 2
+                        BoxBlack:
+                            size_hint_x: 0.65
+                            Image:
+                                id: img_map
+                        BoxBlack:
+                            size_hint_x: 0.35
+# Unterer Boxteil                        
+                    BoxGrey1:
+                        size_hint_y: 0.1
+                        spacing: 2
+                        BoxBlack:
+                            size_hint_x: 0.65
+                            padding: 2
+                            spacing: 2
+                            ButRectThin:
+                                text: '<<'
+                                halign: 'center'
+                                on_release: root.decr_map_index()
+                            ButRectThin:
+                                text: '>>'
+                                halign: 'center'
+                                on_release: root.incr_map_index()
+                        BoxBlack:
+                            size_hint_x: 0.35
+
+
+

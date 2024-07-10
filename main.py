@@ -71,7 +71,7 @@ class Page5(Screen):
         self.data_curr_game = {}
 
     def update_Page_5(self):
-        self.ids.box_tit.ids.lab_tit.text = self.first_letter_upper(
+        self.ids.box_tit.ids.lab_tit.text = self.f_let_upper(
             app.lab_txt["in_the_office"]
         )
 
@@ -212,16 +212,13 @@ class MainApp(App):
             self.curr_player = username
             self.curr_p_data = app.control_data.get_curr_player_data(username)
 
-    def start_new_game(self, instance):
-        # Code to start a new game
-        pass
 
     def start_Saved_Game(self, game_data: dict):
         print("start_Saved_Game() called")
         self.curr_data_game = game_data
         print(game_data)
 
-    def first_letter_upper(self, str_small):
+    def f_let_upper(self, str_small):
         txt = str_small
         new_txt = txt[0].upper() + txt[1:]
         return new_txt

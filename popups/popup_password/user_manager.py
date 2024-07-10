@@ -2,19 +2,21 @@
 import json
 import bcrypt
 
+from datetime import datetime
+
 from constants import *
 
 
 def load_user_data():
     try:
-        with open(USER_DATA_FILE, "r") as file:
+        with open(DF_USER, "r") as file:
             return json.load(file)
     except FileNotFoundError:
         return {}
 
 
 def save_user_data(user_data):
-    with open(USER_DATA_FILE, "w") as file:
+    with open(DF_USER, "w") as file:
         json.dump(user_data, file)
 
 

@@ -1,11 +1,11 @@
 <LoginPopup@Popup>:
     auto_dismiss: False
-    title: app.first_letter_upper(app.lab_txt['login'])
+    title: app.f_let_upper(app.lab_txt['login'])
     size_hint: (0.3, 0.2)
 
     background_color: fs22_n
     title_size: '23sp'
-    title_font: constants.FONT_DIR + 'Jura-Medium.otf'
+    title_font: constants.DIR_FONTS + constants.TITLEFONT
     title_color: fs22_n
     separator_color: fs22_d
     separator_height: '4dp'
@@ -33,13 +33,15 @@
             spacing: 4
             ButRectThin:
                 id: login_button
-                text: app.first_letter_upper(app.lab_txt['login'])
+                text: app.f_let_upper(app.lab_txt['login'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.validate_user()
             ButRectThin:
                 id: cancel_button
-                text: app.first_letter_upper(app.lab_txt['cancel'])
+                text: app.f_let_upper(app.lab_txt['cancel'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.dismiss()
+
+

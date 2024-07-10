@@ -30,7 +30,7 @@ class MapLayout(FloatLayout):
 
         # Hintergrundbild hinzufügen
         self.background = Image(
-            source=f"{PATH_DIR_MAPS}{self.app.data_app['img_maps']['sosnovka']}",
+            source=f"{DIR_MAPS}{self.app.data_app['maps']['sosnovka']}",
             fit_mode="fill",
         )
         self.add_widget(self.background)

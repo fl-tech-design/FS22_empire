@@ -11,9 +11,9 @@ from popups.popup_password.user_manager import register_user, validate_user
 
 from kivy.lang import Builder
 
-from constants import IMG_POPUPS
+from constants import DIR_POPUPS
 
-Builder.load_file(IMG_POPUPS + "popup_password/popup_reg_user.kv")
+Builder.load_file(DIR_POPUPS + "popup_password/popup_reg_user.kv")
 
 class RegisterPopup(Popup):
     def __init__(self, app, **kwargs):

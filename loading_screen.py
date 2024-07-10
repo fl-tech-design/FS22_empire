@@ -8,7 +8,7 @@ from kivy.uix.label import Label
 from kivy.clock import Clock
 import time
 
-from constants import PATH_SPLASHSCREEN
+from constants import SPL_SCREEN_START_APP
 
 
 class LoadingScreen(Screen):
@@ -19,7 +19,7 @@ class LoadingScreen(Screen):
         layout = FloatLayout()
 
         # Hintergrundbild
-        self.background = Image(source=PATH_SPLASHSCREEN, fit_mode="fill")
+        self.background = Image(source=SPL_SCREEN_START_APP, fit_mode="fill")
         layout.add_widget(self.background)
 
         # Fortschrittsanzeige

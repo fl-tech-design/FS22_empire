@@ -50,7 +50,7 @@ class DataControl:
             return None
 
     def load_trucks_from_json(self):
-        with open(PATH_TO_TRUCK_DATA, 'r', encoding='utf-8') as f:
+        with open(DF_TRUCKS, 'r', encoding='utf-8') as f:
             trucks = json.load(f)
         return trucks
 
@@ -99,7 +99,7 @@ class DataControl:
 
     def get_curr_player_data(self, curr_player_name: str):
         try:
-            with open(USER_DATA_FILE, "r", encoding="utf-8") as datei:
+            with open(DF_USER, "r", encoding="utf-8") as datei:
                 daten = json.load(datei)
             return daten[curr_player_name]
         except FileNotFoundError as fe:

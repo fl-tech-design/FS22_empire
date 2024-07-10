@@ -4,6 +4,7 @@ from kivy.lang import Builder
 from constants import *
 
 from popups.popup_password.user_manager import load_user_data
+from popups.popup_select_map.popup_select_map import PopupSelectMap
 
 Builder.load_file(PATH_KV_STARTPAGE)
 
@@ -97,48 +98,52 @@ class StartPage(Screen):
         self.ids.lab_tit_game_saves.text = self.app.lab_txt["game_saves"]
 
         self.ids.box_sg_1.ids.img_map.source = (
-            f'{IMG_DIR}{self.app.data_app["img_splashscreens"]["sosnovka"]}'
+            f'{DIR_IMAGES}{self.app.data_app["maps"]["sosnovka"]}'
         )
         self.ids.box_sg_1.ids.l_tit_game_name.text = self.app.lab_txt["game_name"]
         if self.app.curr_player:
-            self.ids.box_sg_1.ids.l_game_name.text = self.app.loaded_game_data_from_curr_player[
-                self.app.curr_player
-            ]["saved_games_data"][0]["map_name"]
+            self.ids.box_sg_1.ids.l_game_name.text = (
+                self.app.loaded_game_data_from_curr_player[self.app.curr_player][
+                    "saved_games_data"
+                ][0]["map_name"]
+            )
 
-        self.ids.box_sg_1.ids.b_load_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_1.ids.b_load_game.text = self.app.f_let_upper(
             self.app.lab_txt["start"]
         )
-        self.ids.box_sg_2.ids.b_load_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_2.ids.b_load_game.text = self.app.f_let_upper(
             self.app.lab_txt["start"]
         )
-        self.ids.box_sg_3.ids.b_load_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_3.ids.b_load_game.text = self.app.f_let_upper(
             self.app.lab_txt["start"]
         )
-        self.ids.box_sg_4.ids.b_load_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_4.ids.b_load_game.text = self.app.f_let_upper(
             self.app.lab_txt["start"]
         )
-        self.ids.box_sg_5.ids.b_load_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_5.ids.b_load_game.text = self.app.f_let_upper(
             self.app.lab_txt["start"]
         )
 
-        self.ids.box_sg_1.ids.b_del_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_1.ids.b_del_game.text = self.app.f_let_upper(
             self.app.lab_txt["delete"]
         )
-        self.ids.box_sg_2.ids.b_del_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_2.ids.b_del_game.text = self.app.f_let_upper(
             self.app.lab_txt["delete"]
         )
-        self.ids.box_sg_3.ids.b_del_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_3.ids.b_del_game.text = self.app.f_let_upper(
             self.app.lab_txt["delete"]
         )
-        self.ids.box_sg_4.ids.b_del_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_4.ids.b_del_game.text = self.app.f_let_upper(
             self.app.lab_txt["delete"]
         )
-        self.ids.box_sg_5.ids.b_del_game.text = self.app.first_letter_upper(
+        self.ids.box_sg_5.ids.b_del_game.text = self.app.f_let_upper(
             self.app.lab_txt["delete"]
         )
 
         self.ids.box_bottom.ids.but_settings.text = self.app.lab_txt["settings"]
-        self.ids.box_bottom.ids.but_quit.text = self.app.lab_txt["quit"]
+        self.ids.box_bottom.ids.but_quit.text = self.app.f_let_upper(
+            self.app.lab_txt["quit"]
+        )
 
     def set_But_State(self):
         if self.app.saved_players[0]:
@@ -170,12 +175,15 @@ class StartPage(Screen):
         self.app.curr_u_name = curr_uname
         self.app.open_login_popup()
         self.app.login_state = 1
-        self.app.saved_game_data_from_curr_player = (
-            load_user_data()
-        )
+        self.app.saved_game_data_from_curr_player = load_user_data()
 
     def reg_user(self):
         self.app.popup_control.open_reg_user_popup()
+
+    def create_New_Game(self, *args):
+        popup = PopupSelectMap(self.app)
+        popup.open()
+        
 
     def but_start_game_pressed(self, name):
         if name == "b_gs_1_start":

@@ -13,7 +13,7 @@
             rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
     color: fs22_n if self.state == 'normal' else fs22_d
     background_color: 0,0,0,0
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.5
 
 <ButRoundThin@Button>:
@@ -25,7 +25,7 @@
             rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
     color: fs22_n if self.state == 'normal' else fs22_d
     background_color: 0,0,0,0
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.5
     
 
@@ -38,7 +38,7 @@
             rounded_rectangle: (self.x, self.y, self.width, self.height, 25)
     color: fs22_n if self.state == 'normal' else fs22_d
     background_color: 0,0,0,0
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.5
 
 <ButRectThin@Button>:
@@ -50,7 +50,7 @@
             rectangle: (self.x, self.y, self.width, self.height)
     color: fs22_n if self.state == 'normal' else fs22_d
     background_color: 0,0,0,0
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.4
     text_size: self.size
     halign: 'left'
@@ -64,7 +64,7 @@
 ###
 <LabelTitel@Label>:
     color: grey3
-    font_name: constants.FONT_DIR + 'cmunobx.ttf'
+    font_name: constants.DIR_FONTS + 'cmunobx.ttf'
     font_size: self.height * 0.5
     text_size: self.size
     halign: 'left'
@@ -76,7 +76,7 @@
     halign: 'left'
     valign: 'middle'
     color: grey1
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.5
     padding: 10, 0, 0, 0
 <LabJuraLight@Label>:
@@ -84,7 +84,7 @@
     halign: 'left'
     valign: 'middle'
     color: grey3
-    font_name: constants.FONT_DIR + 'Jura-Light.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Light.otf'
     font_size: self.height * 0.6
     padding: 10, 0, 0, 0,
 <LabJuraMedium@Label>:
@@ -92,11 +92,11 @@
     halign: 'left'
     valign: 'middle'
     color: grey3
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.65
     padding: 10, 0, 0, 0,
 <LabCsoon@Label>:
-    font_name: constants.FONT_DIR + "BOYCOTT_.ttf"
+    font_name: constants.DIR_FONTS + "BOYCOTT_.ttf"
     font_size: dp(40)
     color: yellow1
     text: "Comming soon..."
@@ -104,7 +104,7 @@
 # Vordefinierte Label-Link's. Aufbau auf einem Label mit markup.
 ###
 <ButtonQuit@Label>:
-    font_name: constants.FONT_DIR + 'Jura-Medium.otf'
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.6
     markup: True
     text: '[ref=world][color=#1f1f1f]QUIT[/color][/ref]'
@@ -123,6 +123,6 @@
 # Vordefinierte Bilder
 ###
 <Logo_Fltech@Image>:
-    source: constants.IMG_DIR + 'logo-fl-tech.png'
+    source: constants.DIR_IMAGES + 'logo-fl-tech.png'
 <Logo_Main@Image>:
     source: constants.PATH_TO_MAINLOGO
