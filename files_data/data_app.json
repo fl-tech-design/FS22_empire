@@ -16,7 +16,7 @@
     "saved_players": [
         "Hanspeter Fl\u00fctsch",
         "A",
-        "",
+        "a",
         "",
         ""
     ],
@@ -30,11 +30,11 @@
         "volvo": "img_logo_volvo.png"
     },
     "maps": {
-        "elmcreek": {
-            "map_name": "Elmcreek",
-            "img_map": "img_map_elmcreek.png",
-            "img_sel_map": "img_map_choose_elmcreek.png",
-            "img_spl_screen": "img_splash_elmcreek.png",
+        "allein_in_der_welt": {
+            "map_name": "Allein in der Welt",
+            "img_map": "img-map-alleine_in_der_welt.png",
+            "img_sel_map": "img-cho-alleine_in_der_welt.png",
+            "img_spl_screen": "img-spl-alleine_in_der_welt.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -52,11 +52,11 @@
                 }
             }
         },
-        "haut-beyleron": {
-            "map_name": "Haut-Beyleron",
-            "img_map": "img_map_haut-beyleron.png",
-            "img_sel_map": "img_map_choose_haut-beyleron.png",
-            "img_spl_screen": "img_splash_haut-beyleron.png",
+        "balkanska_farma": {
+            "map_name": "Balkanska Farma",
+            "img_map": "img-map-balkanska_farma.png",
+            "img_sel_map": "img-cho-balkanska_farma.png",
+            "img_spl_screen": "img-spl-balkanska_farma.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -74,77 +74,11 @@
                 }
             }
         },
-        "erlengrat": {
-            "map_name": "Erlengrat",
-            "img_map": "img_map_erlengrat.png",
-            "img_sel_map": "img_map_choose_erlengrat.png",
-            "img_spl_screen": "img_splash_erlengrat.png",
-            "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
-                    "image": "app_pics/img_signs/arrow1.png",
-                    "pos": [
-                        767,
-                        723
-                    ]
-                },
-                "app_pics/img_signs/arrow4.png_1": {
-                    "image": "app_pics/img_signs/arrow4.png",
-                    "pos": [
-                        1048,
-                        917
-                    ]
-                }
-            }
-        },
-        "zielonka": {
-            "map_name": "Zielonka",
-            "img_map": "img_map_zielonka.png",
-            "img_sel_map": "img_map_choose_zielonka.png",
-            "img_spl_screen": "img_splash_zielonka.png",
-            "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
-                    "image": "app_pics/img_signs/arrow1.png",
-                    "pos": [
-                        767,
-                        723
-                    ]
-                },
-                "app_pics/img_signs/arrow4.png_1": {
-                    "image": "app_pics/img_signs/arrow4.png",
-                    "pos": [
-                        1048,
-                        917
-                    ]
-                }
-            }
-        },
-        "horsch_agrovation": {
-            "map_name": "Horsch Agrovation",
-            "img_map": "img_map_horsch_agrovation.png",
-            "img_sel_map": "img_map_choose_horsch_agrovation.png",
-            "img_spl_screen": "img_splash_horsch_agrovation.png",
-            "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
-                    "image": "app_pics/img_signs/arrow1.png",
-                    "pos": [
-                        767,
-                        723
-                    ]
-                },
-                "app_pics/img_signs/arrow4.png_1": {
-                    "image": "app_pics/img_signs/arrow4.png",
-                    "pos": [
-                        1048,
-                        917
-                    ]
-                }
-            }
-        },
-        "silverrun_forest": {
-            "map_name": "Silverrun Forest",
-            "img_map": "img_map_silverrun_forest.png",
-            "img_sel_map": "img_map_choose_silverrun_forest.png",
-            "img_spl_screen": "img_splash_silverrun_forest.png",
+        "ch_zkft_hof": {
+            "map_name": "Schweizer Zukunfts Bauernhof",
+            "img_map": "img-map-ch_zkft_hof.png",
+            "img_sel_map": "img-cho-ch_zkft_hof.png",
+            "img_spl_screen": "img-spl-ch_zkft_hof.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -164,9 +98,9 @@
         },
         "dual_valley": {
             "map_name": "Dual Valley",
-            "img_map": "img_map_dual_valley.png",
-            "img_sel_map": "img_map_choose_dual_valley.png",
-            "img_spl_screen": "img_splash_dual_valley.png",
+            "img_map": "img-map-dual_valley.png",
+            "img_sel_map": "img-cho-dual_valley.png",
+            "img_spl_screen": "img-spl-dual_valley.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -184,13 +118,13 @@
                 }
             }
         },
-        "wiebendorf": {
-            "map_name": "Wiebendorf",
-            "img_map": "img_map_wiebendorf.png",
-            "img_sel_map": "img_map_choose_wiebendorf.png",
-            "img_spl_screen": "img_splash_wiebendorf.png",
+        "elmcreek": {
+            "map_name": "Elmcreek",
+            "img_map": "img-map-elmcreek.png",
+            "img_sel_map": "img-cho-elmcreek.png",
+            "img_spl_screen": "img-spl-elmcreek.png",
             "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
+                "app_pics/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
                     "pos": [
                         767,
@@ -206,33 +140,11 @@
                 }
             }
         },
-        "sosnovka": {
-            "map_name": "Sosnovka",
-            "img_map": "img_map_sosnovka.png",
-            "img_sel_map": "img_map_choose_sosnovka.png",
-            "img_spl_screen": "img_splash_sosnovka.png",
-            "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
-                    "image": "app_pics/img_signs/arrow1.png",
-                    "pos": [
-                        767,
-                        723
-                    ]
-                },
-                "app_pics/img_signs/arrow4.png_1": {
-                    "image": "app_pics/img_signs/arrow4.png",
-                    "pos": [
-                        1048,
-                        917
-                    ]
-                }
-            }
-        },
-        "neuer_amerikaner": {
-            "map_name": "Neuer Amerikaner",
-            "img_map": "img_map_neuer_amerikaner.png",
-            "img_sel_map": "img_map_choose_neuer_amerikaner.png",
-            "img_spl_screen": "img_splash_neuer_amerikaner.png",
+        "erlengrat": {
+            "map_name": "Erlengrat",
+            "img_map": "img-map-erlengrat.png",
+            "img_sel_map": "img-cho-erlengrat.png",
+            "img_spl_screen": "img-spl-erlengrat.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -252,9 +164,295 @@
         },
         "estancia_pindo": {
             "map_name": "Estancia Pindorama MT",
-            "img_map": "img_map_estancia_pindo.png",
-            "img_sel_map": "img_map_choose_estancia_pindo.png",
-            "img_spl_screen": "img_splash_estancia_pindo.png",
+            "img_map": "img-map-estancia_pindo.png",
+            "img_sel_map": "img-cho-estancia_pindo.png",
+            "img_spl_screen": "img-spl-estancia_pindo.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "fairhead": {
+            "map_name": "Fairhead",
+            "img_map": "img-map-fairhead.png",
+            "img_sel_map": "img-cho-fairhead.png",
+            "img_spl_screen": "img-spl-fairhead.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "farmview_island": {
+            "map_name": "Farmview Island",
+            "img_map": "img-map-farmview_island.png",
+            "img_sel_map": "img-cho-farmview_island.png",
+            "img_spl_screen": "img-spl-farmview_island.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "haut_beyleron": {
+            "map_name": "Haut-Beyleron",
+            "img_map": "img-map-haut_beyleron.png",
+            "img_sel_map": "img-cho-haut_beyleron.png",
+            "img_spl_screen": "img-spl-haut_beyleron.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "horsch_agrovation": {
+            "map_name": "Horsch Agrovation",
+            "img_map": "img-map-horsch_agrovation.png",
+            "img_sel_map": "img-cho-horsch_agrovation.png",
+            "img_spl_screen": "img-spl-horsch_agrovation.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "korpi": {
+            "map_name": "Korpi",
+            "img_map": "img-map-korpi.png",
+            "img_sel_map": "img-cho-korpi.png",
+            "img_spl_screen": "img-spl-korpi.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "neuer_amerikaner": {
+            "map_name": "Neuer Amerikaner",
+            "img_map": "img-map-neuer_amerikaner.png",
+            "img_sel_map": "img-cho-neuer_amerikaner.png",
+            "img_spl_screen": "img-spl-neuer_amerikaner.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "observatorium": {
+            "map_name": "Observatorium Gedenkkarte",
+            "img_map": "img-map-observatorium.png",
+            "img_sel_map": "img-cho-observatorium.png",
+            "img_spl_screen": "img-spl-observatorium.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "quebec": {
+            "map_name": "Quebec",
+            "img_map": "img-map-quebec.png",
+            "img_sel_map": "img-cho-quebec.png",
+            "img_spl_screen": "img-spl-quebec.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "rehdornheim": {
+            "map_name": "Rehdornheim",
+            "img_map": "img-map-rehdornheim.png",
+            "img_sel_map": "img-cho-rehdornheim.png",
+            "img_spl_screen": "img-spl-rehdornheim.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "silverrun_forest": {
+            "map_name": "Silverrun Forest",
+            "img_map": "img-map-silverrun_forest.png",
+            "img_sel_map": "img-cho-silverrun_forest.png",
+            "img_spl_screen": "img-spl-silverrun_forest.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "sosnovka": {
+            "map_name": "Sosnovka",
+            "img_map": "img-map-sosnovka.png",
+            "img_sel_map": "img-cho-sosnovka.png",
+            "img_spl_screen": "img-spl-sosnovka.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "wiebendorf": {
+            "map_name": "Wiebendorf",
+            "img_map": "img-map-wiebendorf.png",
+            "img_sel_map": "img-cho-wiebendorf.png",
+            "img_spl_screen": "img-spl-wiebendorf.png",
+            "factory_pos": {
+                "app_pics/img_signs/arrow1.png_0": {
+                    "image": "app_pics/img_signs/arrow1.png",
+                    "pos": [
+                        767,
+                        723
+                    ]
+                },
+                "app_pics/img_signs/arrow4.png_1": {
+                    "image": "app_pics/img_signs/arrow4.png",
+                    "pos": [
+                        1048,
+                        917
+                    ]
+                }
+            }
+        },
+        "zielonka": {
+            "map_name": "Zielonka",
+            "img_map": "img-map-zielonka.png",
+            "img_sel_map": "img-cho-zielonka.png",
+            "img_spl_screen": "img-spl-zielonka.png",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -274,16 +472,25 @@
         }
     },
     "map_list": [
-        "img_map_choose_elmcreek.png",
-        "img_map_choose_haut-beyleron.png",
-        "img_map_choose_erlengrat.png",
-        "img_map_choose_zielonka.png",
-        "img_map_choose_horsch_agrovation.png",
-        "img_map_choose_silverrun_forest.png",
-        "img_map_choose_dual_valley.png",
-        "img_map_choose_wiebendorf.png",
-        "img_map_choose_sosnovka.png",
-        "img_map_choose_neuer_amerikaner.png",
-        "img_map_choose_estancia_pindo.png"
+        "img-cho-alleine_in_der_welt.png",
+        "img-cho-balkanska_farma.png",
+        "img-cho-ch_zkft_hof.png",
+        "img-cho-dual_valley.png",
+        "img-cho-elmcreek.png",
+        "img-cho-erlengrat.png",
+        "img-cho-estancia_pindo.png",
+        "img-cho-fairhead.png",
+        "img-cho-farmview_island.png",
+        "img-cho-haut_beyleron.png",
+        "img-cho-horsch_agrovation.png",
+        "img-cho-korpi.png",
+        "img-cho-neuer_amerikaner.png",
+        "img-cho-observatorium.png",
+        "img-cho-quebec.png",
+        "img-cho-rehdornheim.png",
+        "img-cho-silverrun_forest.png",
+        "img-cho-sosnovka.png",
+        "img-cho-wiebendorf.png",
+        "img-cho-zielonka.png"
     ]
 }
