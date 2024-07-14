@@ -30,11 +30,13 @@
         "volvo": "img_logo_volvo.png"
     },
     "maps": {
-        "allein_in_der_welt": {
+        "alleine_in_der_welt": {
             "map_name": "Allein in der Welt",
             "img_map": "img-map-alleine_in_der_welt.png",
             "img_sel_map": "img-cho-alleine_in_der_welt.png",
             "img_spl_screen": "img-spl-alleine_in_der_welt.png",
+            "location": "mysteriöser Ort mitten im Ozean",
+            "num_of_fields": "0",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -57,6 +59,9 @@
             "img_map": "img-map-balkanska_farma.png",
             "img_sel_map": "img-cho-balkanska_farma.png",
             "img_spl_screen": "img-spl-balkanska_farma.png",
+            "location": "Balkan",
+            "num_of_fields": "26",
+            "fields": {},
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -79,6 +84,9 @@
             "img_map": "img-map-ch_zkft_hof.png",
             "img_sel_map": "img-cho-ch_zkft_hof.png",
             "img_spl_screen": "img-spl-ch_zkft_hof.png",
+            "location": "switzerland",
+            "num_of_fields": "40",
+            "fields": {},
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -101,6 +109,10 @@
             "img_map": "img-map-dual_valley.png",
             "img_sel_map": "img-cho-dual_valley.png",
             "img_spl_screen": "img-spl-dual_valley.png",
+            "location": "Wilpeana Pound Australia",
+            "sammelobjekte": "12 Goldnugget-Sammelobjekte",
+            "num_of_fields": "37",
+            "fields": {},
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -120,9 +132,423 @@
         },
         "elmcreek": {
             "map_name": "Elmcreek",
-            "img_map": "img-map-elmcreek.png",
-            "img_sel_map": "img-cho-elmcreek.png",
-            "img_spl_screen": "img-spl-elmcreek.png",
+            "img_map": "img-map_elmcreek.png",
+            "img_sel_map": "img-cho_elmcreek.png",
+            "img_spl_screen": "img-spl_elmcreek.png",
+            "location": "Midwestern USA",
+            "num_of_fields": "82",
+            "fields": {
+                "1": {
+                    "size": 1.334367,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "2": {
+                    "size": 0.889578,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "3": {
+                    "size": 0.741315,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "4": {
+                    "size": 0.7166045,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "5": {
+                    "size": 0.7166045,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "6": {
+                    "size": 1.2108145,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "7": {
+                    "size": 2.2980765,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "8": {
+                    "size": 4.546732,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "9": {
+                    "size": 4.6208635000000005,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "10": {
+                    "size": 14.084985,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "11": {
+                    "size": 6.029362,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "12": {
+                    "size": 2.47105,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "13": {
+                    "size": 0.5189205,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "14": {
+                    "size": 0.543631,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "15": {
+                    "size": 0.6177625,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "16": {
+                    "size": 0.6177625,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "17": {
+                    "size": 0.6671835,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "18": {
+                    "size": 3.113523,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "19": {
+                    "size": 1.235525,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "20": {
+                    "size": 0.4200785,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "21": {
+                    "size": 0.5683415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "22": {
+                    "size": 2.5451815,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "23": {
+                    "size": 1.680314,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "24": {
+                    "size": 1.6556035,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "25": {
+                    "size": 10.674936,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "26": {
+                    "size": 0.6671835,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "27": {
+                    "size": 1.8532875,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "28": {
+                    "size": 2.7922865,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "29": {
+                    "size": 2.5451815,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "30": {
+                    "size": 6.5482825,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "31": {
+                    "size": 9.735937,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "32": {
+                    "size": 16.3336405,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "33": {
+                    "size": 16.3336405,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "34": {
+                    "size": 2.7181550000000003,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "35": {
+                    "size": 2.273366,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "36": {
+                    "size": 2.8417074999999996,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "37": {
+                    "size": 2.520471,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "38": {
+                    "size": 10.872620000000001,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "39": {
+                    "size": 10.922041,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "40": {
+                    "size": 2.9899705,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "41": {
+                    "size": 4.843258,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "42": {
+                    "size": 4.744416,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "43": {
+                    "size": 2.1992345,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "44": {
+                    "size": 0.444789,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "45": {
+                    "size": 0.889578,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "46": {
+                    "size": 0.7166045,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "47": {
+                    "size": 1.7544454999999999,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "48": {
+                    "size": 1.48263,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "49": {
+                    "size": 1.037841,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "50": {
+                    "size": 3.755996,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "51": {
+                    "size": 3.064102,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "52": {
+                    "size": 2.174524,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "53": {
+                    "size": 4.349048,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "54": {
+                    "size": 4.546732,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "55": {
+                    "size": 2.421629,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "56": {
+                    "size": 6.8695189999999995,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "57": {
+                    "size": 11.9845925,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "58": {
+                    "size": 7.956781,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "59": {
+                    "size": 4.546732,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "60": {
+                    "size": 2.619313,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "61": {
+                    "size": 1.6308930000000001,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "62": {
+                    "size": 1.6308930000000001,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "63": {
+                    "size": 1.6556035,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "64": {
+                    "size": 0.5683415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "65": {
+                    "size": 0.5683415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "66": {
+                    "size": 0.5683415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "67": {
+                    "size": 0.5683415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "68": {
+                    "size": 19.817821,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "69": {
+                    "size": 10.9961725,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "70": {
+                    "size": 19.966084,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "71": {
+                    "size": 14.925142,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "72": {
+                    "size": 4.991521,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "73": {
+                    "size": 4.546732,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "74": {
+                    "size": 3.657154,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "75": {
+                    "size": 3.162944,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "76": {
+                    "size": 2.1498135,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "77": {
+                    "size": 3.1876545,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "78": {
+                    "size": 1.2108145,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "79": {
+                    "size": 0.6177625,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "80": {
+                    "size": 0.6177625,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "81": {
+                    "size": 0.7166045,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "82": {
+                    "size": 0.593052,
+                    "cost": "",
+                    "cost_p_acre": ""
+                }
+            },
             "factory_pos": {
                 "app_pics/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -145,6 +571,135 @@
             "img_map": "img-map-erlengrat.png",
             "img_sel_map": "img-cho-erlengrat.png",
             "img_spl_screen": "img-spl-erlengrat.png",
+            "location": "Swiss Alps",
+            "num_of_fields": "25",
+            "fields": {
+                "1": {
+                    "size": 4.34,
+                    "cost": 193240,
+                    "cost_p_acre": 44525.35
+                },
+                "2": {
+                    "size": 6.09,
+                    "cost": 238300,
+                    "cost_p_acre": 39129.17
+                },
+                "3": {
+                    "size": 9.53,
+                    "cost": 234760,
+                    "cost_p_acre": 24633.79
+                },
+                "4": {
+                    "size": 6.07,
+                    "cost": 285080,
+                    "cost_p_acre": 46956.40
+                },
+                "5": {
+                    "size": 5.42,
+                    "cost": 172340,
+                    "cost_p_acre": 31797.05
+                },
+                "6": {
+                    "size": 2.7,
+                    "cost": 102160,
+                    "cost_p_acre": 37837.04
+                },
+                "7": {
+                    "size": 3.95,
+                    "cost": 171720,
+                    "cost_p_acre": 43726.58
+                },
+                "8": {
+                    "size": 5.02,
+                    "cost": 180240,
+                    "cost_p_acre": 35904.38
+                },
+                "9": {
+                    "size": 9.83,
+                    "cost": 189200,
+                    "cost_p_acre": 19247.20
+                },
+                "10": {
+                    "size": 6.88,
+                    "cost": 202020,
+                    "cost_p_acre": 29363.37
+                },
+                "11": {
+                    "size": 7.93,
+                    "cost": 209800,
+                    "cost_p_acre": 26456.49
+                },
+                "12": {
+                    "size": 6.7,
+                    "cost": 181600,
+                    "cost_p_acre": 27104.48
+                },
+                "13": {
+                    "size": 5.95,
+                    "cost": 160000,
+                    "cost_p_acre": 26890.76
+                },
+                "14": {
+                    "size": 11.89,
+                    "cost": 304340,
+                    "cost_p_acre": 25596.30
+                },
+                "15": {
+                    "size": 7.68,
+                    "cost": 251020,
+                    "cost_p_acre": 32684.90
+                },
+                "16": {
+                    "size": 7.77,
+                    "cost": 222960,
+                    "cost_p_acre": 28694.98
+                },
+                "17": {
+                    "size": 6.03,
+                    "cost": 249280,
+                    "cost_p_acre": 41339.97
+                },
+                "18": {
+                    "size": 4.81,
+                    "cost": 140260,
+                    "cost_p_acre": 29160.08
+                },
+                "19": {
+                    "size": 6.85,
+                    "cost": 180400,
+                    "cost_p_acre": 26335.77
+                },
+                "20": {
+                    "size": 4.9,
+                    "cost": 137300,
+                    "cost_p_acre": 28020.41
+                },
+                "21": {
+                    "size": 3.33,
+                    "cost": 92340,
+                    "cost_p_acre": 27729.73
+                },
+                "22": {
+                    "size": 3.81,
+                    "cost": 107220,
+                    "cost_p_acre": 28141.73
+                },
+                "23": {
+                    "size": 6.68,
+                    "cost": 349460,
+                    "cost_p_acre": 52314.37
+                },
+                "24": {
+                    "size": 6.43,
+                    "cost": 188560,
+                    "cost_p_acre": 29325.04
+                },
+                "25": {
+                    "size": 4.47,
+                    "cost": 173560,
+                    "cost_p_acre": 38827.74
+                }
+            },
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -167,28 +722,8 @@
             "img_map": "img-map-estancia_pindo.png",
             "img_sel_map": "img-cho-estancia_pindo.png",
             "img_spl_screen": "img-spl-estancia_pindo.png",
-            "factory_pos": {
-                "app_pics/img_signs/arrow1.png_0": {
-                    "image": "app_pics/img_signs/arrow1.png",
-                    "pos": [
-                        767,
-                        723
-                    ]
-                },
-                "app_pics/img_signs/arrow4.png_1": {
-                    "image": "app_pics/img_signs/arrow4.png",
-                    "pos": [
-                        1048,
-                        917
-                    ]
-                }
-            }
-        },
-        "fairhead": {
-            "map_name": "Fairhead",
-            "img_map": "img-map-fairhead.png",
-            "img_sel_map": "img-cho-fairhead.png",
-            "img_spl_screen": "img-spl-fairhead.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -211,6 +746,8 @@
             "img_map": "img-map-farmview_island.png",
             "img_sel_map": "img-cho-farmview_island.png",
             "img_spl_screen": "img-spl-farmview_island.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -231,8 +768,252 @@
         "haut_beyleron": {
             "map_name": "Haut-Beyleron",
             "img_map": "img-map-haut_beyleron.png",
-            "img_sel_map": "img-cho-haut_beyleron.png",
+            "img_sel_map": "img_cho_haut_beyleron.png",
             "img_spl_screen": "img-spl-haut_beyleron.png",
+            "location": "",
+            "num_of_fields": "",
+            "fields": {
+                "1": {
+                    "size": 1.9768400000000002,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "2": {
+                    "size": 2.174524,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "3": {
+                    "size": 3.805417,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "4": {
+                    "size": 10.032462999999998,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "5": {
+                    "size": 17.1737975,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "6": {
+                    "size": 9.340568999999999,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "7": {
+                    "size": 1.0131305,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "8": {
+                    "size": 1.779156,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "9": {
+                    "size": 9.9089105,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "10": {
+                    "size": 7.6355445,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "11": {
+                    "size": 9.3158585,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "12": {
+                    "size": 1.6308930000000001,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "13": {
+                    "size": 9.9583315,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "14": {
+                    "size": 3.904259,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "15": {
+                    "size": 11.910461,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "16": {
+                    "size": 5.337468,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "17": {
+                    "size": 1.7544454999999999,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "18": {
+                    "size": 7.907360000000001,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "19": {
+                    "size": 19.002374500000002,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "20": {
+                    "size": 6.375309,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "21": {
+                    "size": 6.029362,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "22": {
+                    "size": 11.267987999999999,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "23": {
+                    "size": 2.6440235000000003,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "24": {
+                    "size": 2.9158389999999996,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "25": {
+                    "size": 7.8332285,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "26": {
+                    "size": 34.347595,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "27": {
+                    "size": 4.694995,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "28": {
+                    "size": 8.006202,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "29": {
+                    "size": 7.363729,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "30": {
+                    "size": 19.1506375,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "31": {
+                    "size": 7.2401765000000005,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "32": {
+                    "size": 8.006202,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "33": {
+                    "size": 10.37841,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "34": {
+                    "size": 2.026261,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "35": {
+                    "size": 5.7822569999999995,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "36": {
+                    "size": 17.050245,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "37": {
+                    "size": 5.5104415,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "38": {
+                    "size": 2.8417074999999996,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "39": {
+                    "size": 3.4594699999999996,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "40": {
+                    "size": 2.273366,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "41": {
+                    "size": 4.670284499999999,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "42": {
+                    "size": 3.9783905,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "43": {
+                    "size": 11.317409,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "44": {
+                    "size": 7.561413,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "45": {
+                    "size": 9.3158585,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "46": {
+                    "size": 7.610834,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "47": {
+                    "size": 6.029362,
+                    "cost": "",
+                    "cost_p_acre": ""
+                },
+                "48": {
+                    "size": 7.9320705,
+                    "cost": "",
+                    "cost_p_acre": ""
+                }
+            },
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -255,6 +1036,8 @@
             "img_map": "img-map-horsch_agrovation.png",
             "img_sel_map": "img-cho-horsch_agrovation.png",
             "img_spl_screen": "img-spl-horsch_agrovation.png",
+            "location": "",
+            "num_of_fields": "15",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -277,6 +1060,8 @@
             "img_map": "img-map-korpi.png",
             "img_sel_map": "img-cho-korpi.png",
             "img_spl_screen": "img-spl-korpi.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -299,6 +1084,8 @@
             "img_map": "img-map-neuer_amerikaner.png",
             "img_sel_map": "img-cho-neuer_amerikaner.png",
             "img_spl_screen": "img-spl-neuer_amerikaner.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -321,6 +1108,8 @@
             "img_map": "img-map-observatorium.png",
             "img_sel_map": "img-cho-observatorium.png",
             "img_spl_screen": "img-spl-observatorium.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -339,10 +1128,12 @@
             }
         },
         "quebec": {
-            "map_name": "Quebec",
+            "map_name": "Die Québecer Landschaft",
             "img_map": "img-map-quebec.png",
             "img_sel_map": "img-cho-quebec.png",
             "img_spl_screen": "img-spl-quebec.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -365,6 +1156,8 @@
             "img_map": "img-map-rehdornheim.png",
             "img_sel_map": "img-cho-rehdornheim.png",
             "img_spl_screen": "img-spl-rehdornheim.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -387,6 +1180,8 @@
             "img_map": "img-map-silverrun_forest.png",
             "img_sel_map": "img-cho-silverrun_forest.png",
             "img_spl_screen": "img-spl-silverrun_forest.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -409,6 +1204,8 @@
             "img_map": "img-map-sosnovka.png",
             "img_sel_map": "img-cho-sosnovka.png",
             "img_spl_screen": "img-spl-sosnovka.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -431,6 +1228,8 @@
             "img_map": "img-map-wiebendorf.png",
             "img_sel_map": "img-cho-wiebendorf.png",
             "img_spl_screen": "img-spl-wiebendorf.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -453,6 +1252,8 @@
             "img_map": "img-map-zielonka.png",
             "img_sel_map": "img-cho-zielonka.png",
             "img_spl_screen": "img-spl-zielonka.png",
+            "location": "",
+            "num_of_fields": "",
             "factory_pos": {
                 "app_pics/img_signs/arrow1.png_0": {
                     "image": "app_pics/img_signs/arrow1.png",
@@ -472,25 +1273,24 @@
         }
     },
     "map_list": [
-        "img-cho-alleine_in_der_welt.png",
-        "img-cho-balkanska_farma.png",
-        "img-cho-ch_zkft_hof.png",
-        "img-cho-dual_valley.png",
-        "img-cho-elmcreek.png",
-        "img-cho-erlengrat.png",
-        "img-cho-estancia_pindo.png",
-        "img-cho-fairhead.png",
-        "img-cho-farmview_island.png",
-        "img-cho-haut_beyleron.png",
-        "img-cho-horsch_agrovation.png",
-        "img-cho-korpi.png",
-        "img-cho-neuer_amerikaner.png",
-        "img-cho-observatorium.png",
-        "img-cho-quebec.png",
-        "img-cho-rehdornheim.png",
-        "img-cho-silverrun_forest.png",
-        "img-cho-sosnovka.png",
-        "img-cho-wiebendorf.png",
-        "img-cho-zielonka.png"
+        "alleine_in_der_welt",
+        "balkanska_farma",
+        "ch_zkft_hof",
+        "dual_valley",
+        "elmcreek",
+        "erlengrat",
+        "estancia_pindo",
+        "farmview_island",
+        "haut_beyleron",
+        "horsch_agrovation",
+        "korpi",
+        "neuer_amerikaner",
+        "observatorium",
+        "quebec",
+        "rehdornheim",
+        "silverrun_forest",
+        "sosnovka",
+        "wiebendorf",
+        "zielonka"
     ]
 }

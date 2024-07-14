@@ -25,20 +25,64 @@
                     BoxGrey1:
                         size_hint_y: 0.9
                         spacing: 2
-                        BoxBlack:
-                            size_hint_x: 0.65
-                            Image:
-                                id: img_map
-                        BoxBlack:
-                            size_hint_x: 0.35
+# Box linker teil oben
+                        BoxGrey1:
+                            orientation: 'vertical'
+                            spacing: 2
+                            padding: 0, 0, 0, 2
+                            BoxBlack:
+                                Image:
+                                    id: img_map_cho
+                            BoxBlack:
+                                id: box_index_grid
+                                size_hint_y: 0.1
+                                padding: 50, 2, 50, 2
+# Box rechter Teil oben
+                        BoxGrey1:
+                            orientation: 'vertical'
+                            padding: 2
+                            spacing: 2
+                            size_hint_x: 0.4
+                            BoxBlack:
+                                size_hint_y: 0.075
+                                LabelTitel:
+                                    id: l_tit_map_info
+                            BoxBlack:
+                                orientation: 'vertical'
+                                BoxInfoLine:
+                                    id: row_inf_map_name
+                                    size_hint_y: 0.1
+                                BoxInfoLine:
+                                    id: row_inf_map_location
+                                    size_hint_y: 0.1
+                                BoxInfoLine:
+                                    id: row_inf_num_fields
+                                    size_hint_y: 0.1
+                                BoxInfoLine:
+                                    size_hint_y: 0.1
+                                BoxInfoLine:
+                                    size_hint_y: 0.1
+                                BoxInfoLine:
+                                    size_hint_y: 0.1
+                                BoxBlack:
+                                    padding: 25, 10, 25, 10
+                                    BoxGrey1:
+                                        padding: 2
+                                        BoxGrey4:
+                                            padding:2
+                                            BoxBlack:
+                                                padding: 4
+                                                Image:
+                                                    id: img_map
+
 # Unterer Boxteil                        
                     BoxGrey1:
                         size_hint_y: 0.1
                         spacing: 2
                         BoxBlack:
                             size_hint_x: 0.65
-                            padding: 2
-                            spacing: 2
+                            padding: 10, 6, 10, 4
+                            spacing: 20
                             ButRectThin:
                                 text: '<<'
                                 halign: 'center'
@@ -48,7 +92,20 @@
                                 halign: 'center'
                                 on_release: root.incr_map_index()
                         BoxBlack:
+                            orientation: 'vertical'
                             size_hint_x: 0.35
+                            padding: 10, 6, 10, 4
+                            spacing: 4
+                            ButRectThin:
+                                id: but_start_game
+                                halign: 'center'
+                                padding: 0
+                                on_release: root.start_New_Game()
+                            ButRectThin:
+                                id: but_cancel
+                                halign: 'center'
+                                padding: 0
+                                on_release: root.dismiss()
 
 
 

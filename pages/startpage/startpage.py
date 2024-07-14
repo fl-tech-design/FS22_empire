@@ -180,9 +180,6 @@ class StartPage(Screen):
     def reg_user(self):
         self.app.popup_control.open_reg_user_popup()
 
-    def create_New_Game(self, *args):
-        popup = PopupSelectMap(self.app)
-        popup.open()
         
 
     def but_start_game_pressed(self, name):

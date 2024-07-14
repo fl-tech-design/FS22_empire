@@ -12,17 +12,21 @@
                     BoxBlack:
                         padding: 2
                         size_hint_x: 0.2
+# First Box with Image
                         Image:
                             id: img_map
-                    BoxBlack:
+                    BoxGrey1:
                         orientation: 'vertical'
                         padding: 2
+                        spacing: 2
                         BoxBlack:
-                            LabelTitel:
+                            LabJuraMedium:
                                 id: l_tit_game_name
-                            LabelGrey1:
+                            LabJuraLight:
                                 id: l_game_name
-
+                        BoxBlack:
+                        BoxBlack:
+                        BoxBlack
                     BoxBlack:
                         orientation: 'vertical'
                         padding: 4, 10, 4, 10
@@ -31,9 +35,12 @@
                         ButRectThin:
                             id: b_load_game
                             halign: 'center'
+                            padding: 0
                         ButRectThin:
                             id: b_del_game
                             halign: 'center'
+                            font_size: self.height * 0.37
+                            padding: 0
 ###
 # WidgetBox für daten anzeige
 # Box Userinfo
@@ -176,3 +183,22 @@
                 id: but_quit
                 font_size: self.height * 0.5
                 on_release: app.stop()
+###
+# Gridlayout einreihig
+<BoxInfoLine@BoxGrey1>:
+    padding: 2
+    BoxGrey2:
+        padding: 2, 0, 0, 2
+        BoxBlack:
+            id: box_inf_tit
+            size_hint_x: 0.44
+            LabJuraMedium:
+                id: l_tit_info_line
+                font_size: self.height * 0.5
+        BoxGrey1:
+            padding: 2, 0, 0, 0
+            BoxBlack:
+                id: box_inf_lab
+                LabJuraLight:
+                    id: l_inf_line
+        

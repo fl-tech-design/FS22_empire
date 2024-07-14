@@ -15,6 +15,7 @@ from popups.popup_sel_comp import CompanySelectionPopup
 
 from popups.popup_password.popup_log_user import LoginPopup
 from popups.popup_password.popup_reg_user import RegisterPopup
+from popups.popup_select_map.popup_select_map import PopupSelectMap
 from popups.popup_password.user_manager import load_user_data
 
 from constants import *
@@ -53,9 +54,10 @@ class PopupControl:
         popup = CompanySelectionPopup(app.lab_txt)
         popup.open()
 
-    def open_time_set_popup(self, instance):
-        if not self.status:
-            self.popup.open()
+    def create_New_Game(self, *args):
+        popup = PopupSelectMap(app)
+        popup.open()
+
 
 
 class PageMapLayout(Screen):
@@ -88,7 +90,8 @@ class MainApp(App):
         self.curr_language = self.data_app["curr_language"]
         self.lab_txt = self.control_data.read_data_txt(self.curr_language)
         self.data_trucks = self.control_data.load_trucks_from_json()
-
+        self.len_list_map = len(self.data_app["map_list"])
+        print("self.len_list_map: ", self.len_list_map)
         # App Grundeinstellungen werden gesetzt
         Window.maximize()
         self.title = self.data_app["app_name"]

@@ -1,7 +1,7 @@
 #constants.py
 import os
 
-VERSION_NR = '1.0.0'
+VERSION_NR = '0.0.5'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -12,9 +12,10 @@ DIR_POPUPS = os.path.join(os.path.dirname(__file__), 'popups/')
 DIR_MAPS = os.path.join(os.path.dirname(__file__), 'app_pics/')
 
 # Paths to images
-SPL_SCREEN_START_APP = DIR_IMAGES + 'bg_giants.jpg'
-PATH_TO_MAINLOGO = os.path.join(os.path.dirname(__file__), 'app_pics/img_fs22-empire.png')
+SPL_SCREEN_START_APP = DIR_IMAGES + 'img_spl_giants.jpg'
+PATH_TO_MAINLOGO = os.path.join(os.path.dirname(__file__), 'app_pics/img_logo_fs22-empire.png')
 PATH_TO_TRUCK_IMG = os.path.join(os.path.dirname(__file__), 'app_pics/')
+PATH_DIR_IMG_CHO = os.path.join(os.path.dirname(__file__), 'app_pics/img_cho_map/')
 
 
 # Paths datafiles
