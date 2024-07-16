@@ -31,11 +31,11 @@ class LoginPopup(Popup):
 
     def show_error(self):
         error_popup = Popup(
-            title=self.app.lab_txt["error"],
+            title=self.app.lab_txt["nouns"]["error"].split()[1],
             title_size="23sp",
             title_font=DIR_FONTS + TITLEFONT,
             content=Label(
-                text=self.app.lab_txt["invalid_username_or_password"],
+                text=self.app.lab_txt["status"]["invalid_username_or_password"],
                 font_size=self.height * 0.1,
             ),
             size_hint=(0.3, 0.3),

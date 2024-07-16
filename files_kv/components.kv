@@ -59,6 +59,11 @@
 
 
 
+<ButClear@Button>:
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
+    font_size: self.height * 0.5
 ###
 # Vordefinierte Labels.
 ###
@@ -68,17 +73,10 @@
     font_size: self.height * 0.5
     text_size: self.size
     halign: 'left'
-    valign: 'center'
+    valign: 'middle'
     padding: 10, 0, 0, 0
 
-<LabelGrey1@Label>:
-    text_size: self.size
-    halign: 'left'
-    valign: 'middle'
-    color: grey1
-    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
-    font_size: self.height * 0.5
-    padding: 10, 0, 0, 0
+# Label with Jura-Light font. haligned left. fontcolor=grey3
 <LabJuraLight@Label>:
     text_size: self.size
     halign: 'left'
@@ -87,6 +85,7 @@
     font_name: constants.DIR_FONTS + 'Jura-Light.otf'
     font_size: self.height * 0.6
     padding: 10, 0, 0, 0,
+# Label with Jura-Medium font. haligned left. fontcolor=grey3
 <LabJuraMedium@Label>:
     text_size: self.size
     halign: 'left'
@@ -95,6 +94,7 @@
     font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.65
     padding: 10, 0, 0, 0,
+# Label for empty filds in progress...
 <LabCsoon@Label>:
     font_name: constants.DIR_FONTS + "BOYCOTT_.ttf"
     font_size: dp(40)
@@ -103,22 +103,15 @@
 ###
 # Vordefinierte Label-Link's. Aufbau auf einem Label mit markup.
 ###
-<ButtonQuit@Label>:
+<LabButQuit@Label>:
     font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
     font_size: self.height * 0.6
     markup: True
     text: '[ref=world][color=#1f1f1f]QUIT[/color][/ref]'
-<ButtonHelp@Button>:
-    canvas.before:
-        Color:
-            rgba: app.a_conf.colors['but_down'] if self.state == 'normal' else app.a_conf.colors['but_norm']
-        Line:
-            width: 2
-            ellipse: (self.x, self.y, self.width, self.height)
-    markup: True
-    text: '[b]?[/b]'
-    background_color: 0,0,0,0
-    color: app.a_conf.colors['font_light'] if self.state == 'normal' else app.a_conf.colors['font_dark']
+<LabButHelp@ButClear>:
+    text: "?"
+    font_size: self.height * 0.8
+    on_release: app.popup_control.open_Help_popup(app.scr_man.current)
 ###
 # Vordefinierte Bilder
 ###

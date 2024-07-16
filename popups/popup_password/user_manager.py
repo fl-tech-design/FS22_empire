@@ -9,14 +9,14 @@ from constants import *
 
 def load_user_data():
     try:
-        with open(DF_USER, "r") as file:
+        with open(PATH_USER_DATA, "r") as file:
             return json.load(file)
     except FileNotFoundError:
         return {}
 
 
 def save_user_data(user_data):
-    with open(DF_USER, "w") as file:
+    with open(PATH_USER_DATA, "w") as file:
         json.dump(user_data, file)
 
 
@@ -37,16 +37,17 @@ def register_user(username, password):
         return False  # User already exists
     user_data[username] = {
         "password": hash_password(password),
-        "creation_date": now,
-        "last_save": now,
-        "saved_games": 0,
-        "played_games": 0,
+        "crea_date": now,
+        "last_login": now,
+        "sa_games": 0,
+        "pl_games": 0,
         "last_game": "",
         "tot_p_time": "0h 0min",
-        "saved_games_data": [
+        "s_g_names": [0, 0, 0, 0, 0],
+        "sa_games_data": [
             {
                 "map_name": "",
-                "creation_date": "",
+                "crea_date": "",
                 "time_scale": 1,
                 "days_per_month": 1,
                 "total_cash": 0,
@@ -56,7 +57,7 @@ def register_user(username, password):
             },
             {
                 "map_name": "",
-                "creation_date": "",
+                "crea_date": "",
                 "time_scale": 1,
                 "days_per_month": 1,
                 "total_cash": 0,
@@ -66,7 +67,7 @@ def register_user(username, password):
             },
             {
                 "map_name": "",
-                "creation_date": "",
+                "crea_date": "",
                 "time_scale": 1,
                 "days_per_month": 1,
                 "total_cash": 0,
@@ -76,7 +77,7 @@ def register_user(username, password):
             },
             {
                 "map_name": "",
-                "creation_date": "",
+                "crea_date": "",
                 "time_scale": 1,
                 "days_per_month": 1,
                 "total_cash": 0,
@@ -86,7 +87,7 @@ def register_user(username, password):
             },
             {
                 "map_name": "",
-                "creation_date": "",
+                "crea_date": "",
                 "time_scale": 1,
                 "days_per_month": 1,
                 "total_cash": 0,

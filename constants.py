@@ -1,7 +1,7 @@
 #constants.py
 import os
 
-VERSION_NR = '0.0.5'
+VERSION_NR = '0.0.6'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -9,7 +9,12 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIR_FONTS = os.path.join(os.path.dirname(__file__), 'app_fonts/')
 DIR_IMAGES = os.path.join(os.path.dirname(__file__), 'app_pics/')
 DIR_POPUPS = os.path.join(os.path.dirname(__file__), 'popups/')
-DIR_MAPS = os.path.join(os.path.dirname(__file__), 'app_pics/')
+DIR_MAPS = os.path.join(os.path.dirname(__file__), 'app_pics/img_maps/')
+DIR_LOGOS = os.path.join(os.path.dirname(__file__), 'app_pics/img_logos/')
+DIR_SIGNS = os.path.join(os.path.dirname(__file__), 'app_pics/img_signs/')
+DIR_SPLASH_SCR = os.path.join(os.path.dirname(__file__), 'app_pics/img_splashscreens/')
+DIR_TRUCKS = os.path.join(os.path.dirname(__file__), 'app_pics/img_trucks/')
+
 
 # Paths to images
 SPL_SCREEN_START_APP = DIR_IMAGES + 'img_spl_giants.jpg'
@@ -23,12 +28,12 @@ PATH_DATA_APP = os.path.join(os.path.dirname(__file__), 'files_data/data_app.jso
 PATH_DATA_TXT = os.path.join(os.path.dirname(__file__), 'files_data/data_txt.json')
 PATH_DATA_GAME = os.path.join(os.path.dirname(__file__), 'files_data/data_game.json')
 DF_TRUCKS = os.path.join(os.path.dirname(__file__), 'files_data/data_lkw.json')
-DF_USER = os.path.join(os.path.dirname(__file__),'files_data/user_data.json')
+PATH_USER_DATA = os.path.join(os.path.dirname(__file__),'files_data/user_data.json')
 
 # Paths .kv-files
 
-PATH_KV_STARTPAGE = os.path.join(os.path.dirname(__file__), 'pages/startpage/startpage.kv')
-PATH_KV_SETTINGPAGE = os.path.join(os.path.dirname(__file__), 'pages/settingpage/settingpage.kv')
+PATH_KV_STARTPAGE = os.path.join(os.path.dirname(__file__), 'pages/page_start/startpage.kv')
+PATH_KV_SETTINGPAGE = os.path.join(os.path.dirname(__file__), 'pages/page_settings/settingpage.kv')
 PATH_KV_PAGE_4 = os.path.join(os.path.dirname(__file__), 'pages/buyitempage/buyitempage.kv')
 
 
@@ -42,3 +47,4 @@ PATH_KV_WIDGETS = os.path.join(os.path.dirname(__file__), 'files_kv/widgets.kv')
 TITLEFONT = 'Jura-DemiBold.otf'
 LABELFONT_M = 'Jura-Medium.otf'
 
+BUT_CLEAR = os.path.join(os.path.dirname(__file__), 'app_pics/img_clear.png')

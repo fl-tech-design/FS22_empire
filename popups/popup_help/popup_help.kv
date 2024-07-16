@@ -1,0 +1,23 @@
+<PopupHelp@Popup>:
+    auto_dismiss: False
+    size_hint: (0.5, 0.5)
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.DIR_FONTS + constants.TITLEFONT
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxGrey1:
+        orientation: 'vertical'
+        padding: 2
+        spacing: 2
+        BoxBlack:
+            LabJuraLight:
+                id: l_descr_help
+                font_size: self.height * 0.1
+        BoxBlack:
+            size_hint_y: 0.1
+            ButClear:
+                id: but_close_popup
+                font_size: self.height * 0.7
+                on_release: root.close_Popup()

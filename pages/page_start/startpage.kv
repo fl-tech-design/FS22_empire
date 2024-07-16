@@ -1,4 +1,4 @@
-#start_page.kv
+#page_start.kv
 <StartPage>:
 ## grauer Rand rund herum
     BoxGrey2:
@@ -7,7 +7,9 @@
         BoxBlack:
             orientation: 'vertical'
             spacing: 1
+################
 # Start Titelbox
+################
             BoxTitle:
                 id: box_tit
 # Start Middlebox
@@ -16,89 +18,106 @@
                 name: 'box_middle_page_1'
                 padding: 2
                 spacing: 2
-###
+##########
 # Box Left
+##########
                 BoxBlack:
                     size_hint_x: 0.4
-                    padding: 1
+                    padding: 1, 1, 1, 0
                     BoxGrey2:
-                        padding: 1
-                        spacing: 1
+                        padding: 1, 1, 1, 0
                         orientation: 'vertical'
 # Box Userliste
                         BoxBlack:
-                            padding: 1
+                            padding: 1, 1, 1, 0
                             BoxGrey1:
-                                padding: 2
+                                padding: 2, 2, 2, 2
                                 spacing: 10
                                 orientation:'vertical'
+# Box Label registered User.                                
                                 BoxBlack:
                                     size_hint_y: 0.075
 # Label registrierte User                                    
                                     LabelTitel:
                                         id: lab_reg_users
                                         font_size: self.height * 0.5
+                                        color: fs22_n
+# Box Button user 1                                        
                                 BoxBlack:
                                     size_hint_y: 0.1
 # Button user 1                                    
                                     ButRectThin:
                                         id: but_uname_1
+                                        color: grey4
                                         on_release: root.set_User(self.text)
+# Box Button User 2                                    
                                 BoxBlack:
                                     size_hint_y: 0.1
 # Button user 2                                    
                                     ButRectThin:
                                         id: but_uname_2
+                                        color: grey4
                                         on_release: root.set_User(self.text)
+# Button User 3
                                 BoxBlack:
                                     size_hint_y: 0.1
 # Button user 3
                                     ButRectThin:
                                         id: but_uname_3
+                                        color: grey4
                                         on_release: root.set_User(self.text)
+# Box Button User 4 
                                 BoxBlack:
                                     size_hint_y: 0.1
 # Button user 4
                                     ButRectThin:
                                         id: but_uname_4
+                                        color: grey4
                                         on_release: root.set_User(self.text)
+# Box Button User 5
                                 BoxBlack:
                                     size_hint_y: 0.1
 # Button user 5
                                     ButRectThin:
                                         id: but_uname_5
+                                        color: grey4
                                         on_release: root.set_User(self.text)
-# Box Userinfo
+# Box Userinfo. defined in widgts.kv as BoxInfo
                         BoxInfo:
                             id: box_u_info            
+# Box Button logout user
+                        BoxGrey2:
+                            size_hint_y: 0.15
+                            padding: 1, 0, 1, 1
+                            BoxGrey1:
+                                padding: 1, 0, 1, 1
+                                BoxGrey2:
+                                    padding: 4, 0, 4, 4
+                                    BoxBlack:
+                                        padding: 10, 0, 10, 4
+# Button Logout User
+                                        ButClear:
+                                            id: but_logout_user
+                                            font_size: self.height * 0.6
+                                            on_release: root.logout_User()
 # Box Button new user
                         BoxBlack:
                             size_hint_y: 0.15
                             padding: 5, 2, 5, 2
                             BoxGrey1:
                                 padding: 4, 2, 4, 2
+# Box Button New User registration
+
                                 BoxBlack:
                                     padding: 10, 4, 10, 4
 # Button New User registration
                                     ButRoundThin:
                                         id: but_new_user
                                         font_size: self.height * 0.6
-                                        on_release: root.reg_user()
-# Box new game
-                        BoxBlack:
-                            size_hint_y: 0.15
-                            padding: 5, 2, 5, 2
-                            BoxGrey1:
-                                padding: 4, 2, 4, 2
-                                BoxBlack:
-                                    padding: 10, 4, 10, 4
-# Button create new game                                    
-                                    ButRoundThin:
-                                        id: but_new_game
-                                        font_size: self.height * 0.6
-                                        on_release: app.popup_control.create_New_Game()
-###
-# Box Right                
+                                        on_release: app.popup_control.open_reg_user_popup()
+###########
+# Box Right   
+###########             
                 BoxBlack:
                     padding: 2
                     BoxGrey2:
@@ -114,34 +133,39 @@
                                         padding: 2
                                         spacing: 2
                                         orientation: 'vertical'
-###
-#Box Label Titel gespeicherte Spielebox                                        
+# Box Label Titel gespeicherte Spielebox                                        
                                         BoxBlack:
                                             padding: 2
                                             size_hint_y: 0.075
 # Label Titel gespeicherte Spielebox                                            
                                             LabelTitel:
-                                                id: lab_tit_game_saves
+                                                id: lab_tit_g_saves
                                                 font_size: self.height * 0.7
+                                                color: fs22_n
 # Box mit den anzeigen der gespeicherten Spiele                                        
                                         BoxBlack:
                                             orientation: 'vertical'
                                             padding: 2
                                             spacing: 2
+# Box savedgames 1
                                             BoxShowSavedGames:
                                                 id: box_sg_1
+# Box savedgames 2 
                                             BoxShowSavedGames:
                                                 id: box_sg_2
+# Box savedgames 3                                            
                                             BoxShowSavedGames:
                                                 id: box_sg_3
+# Box savedgames 4
                                             BoxShowSavedGames:
                                                 id: box_sg_4
+# Box savedgames 5                                                
                                             BoxShowSavedGames:
                                                 id: box_sg_5
 # Box für weiteres
                                 BoxBlack:
                                     padding: 150, 15, 150, 15
-                                    size_hint_y: 0.05
+                                    size_hint_y: 0.0375
 ###
 # Start Bottombox
             BoxBottom:

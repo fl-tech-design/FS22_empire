@@ -1,6 +1,6 @@
 <LoginPopup@Popup>:
     auto_dismiss: False
-    title: app.f_let_upper(app.lab_txt['login'])
+    title: app.f_let_upper(app.lab_txt["verbs"]['login'])
     size_hint: (0.3, 0.2)
 
     background_color: fs22_n
@@ -19,7 +19,7 @@
             color: fs22_d
         TextInput:
             id: password_input
-            hint_text: 'Password'
+            hint_text: app.lab_txt["nouns"]["password"].split()[1]
             hint_text_color: fs22_d
             background_color: grey2
             cursor_color: fs22_n
@@ -33,13 +33,13 @@
             spacing: 4
             ButRectThin:
                 id: login_button
-                text: app.f_let_upper(app.lab_txt['login'])
+                text: app.f_let_upper(app.lab_txt["verbs"]['login'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.validate_user()
             ButRectThin:
                 id: cancel_button
-                text: app.f_let_upper(app.lab_txt['cancel'])
+                text: app.f_let_upper(app.lab_txt["verbs"]['cancel'])
                 font_size: self.height * 0.5
                 halign: 'center'
                 on_release: root.dismiss()

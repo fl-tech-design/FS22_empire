@@ -11,14 +11,14 @@ import json
 from constants import *
 
 
-class MapLayout(FloatLayout):
+class PageMap(FloatLayout):
     arrow_image = None
     placing_arrow = False
     arrow_id_counter = 0
     popup_open = False
 
     def __init__(self, lab_txt, app, **kwargs):
-        super(MapLayout, self).__init__(**kwargs)
+        super(PageMap, self).__init__(**kwargs)
 
         self.txt_lab = lab_txt
         self.app = app
@@ -26,7 +26,7 @@ class MapLayout(FloatLayout):
         self.arrow_buttons = {}
         self.current_arrow_id = None
 
-        self.current_game_name = "sosnovka_240624"
+        self.current_g_name = "sosnovka_240624"
 
         # Hintergrundbild hinzufügen
         self.background = Image(
@@ -173,12 +173,12 @@ class MapLayout(FloatLayout):
         self.popup_open = False
 
     def save_arrows(self):
-        with open(f"{self.current_game_name}.json", "w") as file:
+        with open(f"{self.current_g_name}.json", "w") as file:
             json.dump(self.arrow_buttons, file)
 
     def load_arrows(self):
         try:
-            with open(f"{self.current_game_name}.json", "r") as file:
+            with open(f"{self.current_g_name}.json", "r") as file:
                 self.arrow_buttons = json.load(file)
                 for key, data in self.arrow_buttons.items():
                     arrow_image = Image(

@@ -19,6 +19,7 @@ class RegisterPopup(Popup):
     def __init__(self, app, **kwargs):
         super(RegisterPopup, self).__init__(**kwargs)
         self.app = app
+        self.ids.username_input.focus = True
 
         Window.bind(on_key_down=self._on_key_down)
 

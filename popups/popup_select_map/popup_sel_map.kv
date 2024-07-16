@@ -1,6 +1,7 @@
+#popup_sel_map.kv
 <PopupSelectMap@Popup>:
     auto_dismiss: False
-    title: app.f_let_upper(app.lab_txt['select_map'])
+    title: app.f_let_upper(app.lab_txt["app"]["select_map"])
     background_color: fs22_n
     title_size: '23sp'
     title_font: constants.DIR_FONTS + constants.LABELFONT_M
@@ -45,20 +46,26 @@
                             size_hint_x: 0.4
                             BoxBlack:
                                 size_hint_y: 0.075
+# Label für den Titelmit den Karteninformationen
                                 LabelTitel:
                                     id: l_tit_map_info
                             BoxBlack:
                                 orientation: 'vertical'
+# Infolinie 1: anzeige Spielname. einfach er Name der Karte
                                 BoxInfoLine:
                                     id: row_inf_map_name
                                     size_hint_y: 0.1
+# Infolinie 2: anzeige Gegend. location aus dem map_dict
                                 BoxInfoLine:
                                     id: row_inf_map_location
                                     size_hint_y: 0.1
+# Infolinie 3: anzeige Felderanzahl. num_of_fields aus map_dict
                                 BoxInfoLine:
                                     id: row_inf_num_fields
                                     size_hint_y: 0.1
+# Infolinie 4: anzeige Felderanzahl. num_of_factories aus map_dict
                                 BoxInfoLine:
+                                    id: row_inf_num_fact
                                     size_hint_y: 0.1
                                 BoxInfoLine:
                                     size_hint_y: 0.1
@@ -72,6 +79,7 @@
                                             padding:2
                                             BoxBlack:
                                                 padding: 4
+# Bild das die aktuelle Karte anzeigt                                                
                                                 Image:
                                                     id: img_map
 
@@ -83,11 +91,11 @@
                             size_hint_x: 0.65
                             padding: 10, 6, 10, 4
                             spacing: 20
-                            ButRectThin:
+                            ButClear:
                                 text: '<<'
                                 halign: 'center'
                                 on_release: root.decr_map_index()
-                            ButRectThin:
+                            ButClear:
                                 text: '>>'
                                 halign: 'center'
                                 on_release: root.incr_map_index()
@@ -96,13 +104,17 @@
                             size_hint_x: 0.35
                             padding: 10, 6, 10, 4
                             spacing: 4
+# Button to start a new game
                             ButRectThin:
                                 id: but_start_game
+                                font_size: self.height * 0.6
                                 halign: 'center'
                                 padding: 0
                                 on_release: root.start_New_Game()
+# Button to close the popup
                             ButRectThin:
                                 id: but_cancel
+                                font_size: self.height * 0.6
                                 halign: 'center'
                                 padding: 0
                                 on_release: root.dismiss()
