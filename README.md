@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-**FS22-empire** ist eine eigenständige Anwendung, die als Zusatzprogramm für **Farming Simulator 22 (FS22)** entwickelt wurde. Diese App zielt darauf ab, den administrativen Aufwand im Spiel zu erleichtern und die Verwaltung deiner Firma realistischer zu gestalten. 
+**FS22-empire** ist eine eigenständige Anwendung, die als Zusatzprogramm für **Farming Simulator 22 (FS22)** entwickelt wird. Diese App zielt darauf ab, den administrativen Aufwand im Spiel zu erleichtern und die Verwaltung deiner Firma realistischer zu gestalten. 
 
 ## Funktionen
 
@@ -15,4 +15,4 @@
 
 1. Klone das Repository:
    ```bash
-   git clone https://github.com/deinbenutzername/FS22-empire.git
+   git clone https://github.com/fl-tech-design/FS22-empire.git

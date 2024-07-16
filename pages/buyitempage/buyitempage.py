@@ -36,7 +36,7 @@ class BuyItemPage(Screen):
 
         self.ids.but_buy.text = self.app.lab_txt["buy"]
 
-        self.ids.img_show_truck.source = PATH_TO_TRUCK_IMG + self.truck_data["img_path"]
+        self.ids.img_show_truck.source = DIR_TRUCKS + self.truck_data["img_path"]
 
     def check_Brand(self):
         if self.truck_data["Marke"] == "FIAT":

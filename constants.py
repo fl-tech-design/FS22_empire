@@ -1,7 +1,7 @@
 #constants.py
 import os
 
-VERSION_NR = '0.0.6'
+VERSION_NR = '0.0.7'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -17,10 +17,11 @@ DIR_TRUCKS = os.path.join(os.path.dirname(__file__), 'app_pics/img_trucks/')
 
 
 # Paths to images
-SPL_SCREEN_START_APP = DIR_IMAGES + 'img_spl_giants.jpg'
-PATH_TO_MAINLOGO = os.path.join(os.path.dirname(__file__), 'app_pics/img_logo_fs22-empire.png')
-PATH_TO_TRUCK_IMG = os.path.join(os.path.dirname(__file__), 'app_pics/')
-PATH_DIR_IMG_CHO = os.path.join(os.path.dirname(__file__), 'app_pics/img_cho_map/')
+PATH_TO_MAINLOGO = DIR_LOGOS + 'img_logo_fs22-empire.png'
+ATH_DIR_IMG_CHO = os.path.join(os.path.dirname(__file__), 'app_pics/img_cho_map/')
+
+# Path splashscreens
+SPL_SCREEN_START_APP = DIR_SPLASH_SCR + 'img_spl_giants.jpg'
 
 
 # Paths datafiles
