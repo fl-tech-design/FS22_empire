@@ -40,8 +40,8 @@ class SettingPage(Screen):
         self.ids.but_new_lkw.text = self.app.lab_txt["app"]["new_truck"]
         self.ids.but_new_tractor.text = self.app.lab_txt["app"]["new_tractor"]
 
-        self.ids.box_bottom.ids.but_settings.text = self.app.f_let_upper(self.app.lab_txt["app"]["back"])
-        self.ids.box_bottom.ids.but_quit.text = self.app.f_let_upper(self.app.lab_txt["app"]["quit"])
+        self.ids.box_bottom.ids.but_1.text = self.app.f_let_upper(self.app.lab_txt["app"]["back"])
+        self.ids.box_bottom.ids.but_2.text = self.app.f_let_upper(self.app.lab_txt["app"]["quit"])
 
     def adminbutton_pressed(self):
         if self.admin_state:

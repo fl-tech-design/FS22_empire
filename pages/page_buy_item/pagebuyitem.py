@@ -5,13 +5,13 @@ import os
 
 from constants import *
 
-kv_path = os.path.join(os.path.dirname(__file__), "buyitempage.kv")
+kv_path = os.path.join(os.path.dirname(__file__), "pagebuyitem.kv")
 Builder.load_file(kv_path)
 
 
-class BuyItemPage(Screen):
+class PageBuyItem(Screen):
     def __init__(self, app, **kwargs):
-        super(BuyItemPage, self).__init__(**kwargs)
+        super(PageBuyItem, self).__init__(**kwargs)
         self.app = app
         self.truck_index = 0
         self.truck_data = {}

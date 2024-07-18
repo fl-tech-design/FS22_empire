@@ -18,7 +18,7 @@ DIR_TRUCKS = os.path.join(os.path.dirname(__file__), 'app_pics/img_trucks/')
 
 # Paths to images
 PATH_TO_MAINLOGO = DIR_LOGOS + 'img_logo_fs22-empire.png'
-ATH_DIR_IMG_CHO = os.path.join(os.path.dirname(__file__), 'app_pics/img_cho_map/')
+PATH_DIR_IMG_CHO = os.path.join(os.path.dirname(__file__), 'app_pics/img_cho_map/')
 
 # Path splashscreens
 SPL_SCREEN_START_APP = DIR_SPLASH_SCR + 'img_spl_giants.jpg'
@@ -35,8 +35,8 @@ PATH_USER_DATA = os.path.join(os.path.dirname(__file__),'files_data/user_data.js
 
 PATH_KV_STARTPAGE = os.path.join(os.path.dirname(__file__), 'pages/page_start/startpage.kv')
 PATH_KV_SETTINGPAGE = os.path.join(os.path.dirname(__file__), 'pages/page_settings/settingpage.kv')
-PATH_KV_PAGE_4 = os.path.join(os.path.dirname(__file__), 'pages/buyitempage/buyitempage.kv')
-
+PATH_KV_PAGE_4 = os.path.join(os.path.dirname(__file__), 'pages/page_buy_item/pagebuyitem.kv')
+PATH_KV_PAGEMAINGAME = os.path.join(os.path.dirname(__file__), 'pages/page_main_game/pagemaingame.kv')
 
 PATH_KV_COLORS = os.path.join(os.path.dirname(__file__), 'files_kv/colors.kv')
 PATH_KV_BOXES = os.path.join(os.path.dirname(__file__), 'files_kv/boxes.kv')

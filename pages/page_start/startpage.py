@@ -1,6 +1,6 @@
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-
+from kivy.clock import Clock
 from constants import *
 
 from popups.popup_password.user_manager import load_user_data
@@ -68,7 +68,7 @@ class StartPageUpdater:
             for i in range(1, 6):
                 if self.app.curr_u_data["s_g_names"][i - 1]:
                     self.ids[f"box_sg_{i}"].ids.img_map.source = (
-                        f'{DIR_IMAGES}{self.app.data_app["maps"][user_data[self.app.curr_player]["s_g_names"][i - 1]]["img_spl_scr"]}'
+                        f'{DIR_SPLASH_SCR}{self.app.data_app["maps"][user_data[self.app.curr_player]["s_g_names"][i - 1]]["img_spl_scr"]}'
                     )
                     self.ids[f"box_sg_{i}"].ids.l_img_map.text = ""
                     self.ids[f"box_sg_{i}"].ids.b_load_game.text = self.app.lab_txt["app"][
@@ -99,18 +99,19 @@ class StartPageUpdater:
         self.ids.but_new_user.text = self.app.lab_txt["app"]["new_player"]
 
 
-        self.ids.box_bottom.ids.but_settings.text = self.app.lab_txt["settings"][
+        self.ids.box_bottom.ids.but_1.text = self.app.lab_txt["settings"][
             "settings"
         ]
-        self.ids.box_bottom.ids.but_quit.text = self.app.f_let_upper(
+        self.ids.box_bottom.ids.but_2.text = self.app.f_let_upper(
             self.app.lab_txt["app"]["quit"]
         )
 
 
 class StartPage(Screen):
-    def __init__(self, app, **kwargs):
+    def __init__(self, app, scr_man, **kwargs):
         super(StartPage, self).__init__(**kwargs)
         self.app = app
+        self.scr_man = scr_man
         self.state_game_selected = 0
         self.state_user_selected = 0
         self.set_But_Names()
@@ -144,15 +145,14 @@ class StartPage(Screen):
                 self.ids.box_sg_5.ids.b_load_game.text,
             )
         )
+        Clock.schedule_once(self.app.update_app_loop, 4)
 
     def update_page_start(self):
         self.set_But_State()
-        self.update_Label_StartPage()
-
-    def update_Label_StartPage(self):
         updater = StartPageUpdater(self.app, self.ids)
         updater.update()
 
+        
     def set_But_State(self):
         # usernamebuttons
         if self.app.saved_players[0]:
@@ -190,7 +190,7 @@ class StartPage(Screen):
     def but_Load_Game_Pressed(self, name, txt):
         if name == "b_gs_1_start":
             if txt == self.app.lab_txt["app"]["new_game"]:
-                self.app.popup_control.create_New_Game()
+                self.app.popup_control.create_New_Game(self.scr_man)
             else:
                 self.app.start_Saved_Game(
                     self.app.loaded_user_data_from_curr_player[self.app.curr_player][

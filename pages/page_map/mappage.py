@@ -182,7 +182,6 @@ class PageMap(FloatLayout):
                 self.arrow_buttons = json.load(file)
                 for key, data in self.arrow_buttons.items():
                     arrow_image = Image(
-                        source=data["image"],
                         size_hint=(None, None),
                         size=(40, 40),
                         fit_mode="scale-down",

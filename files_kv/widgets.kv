@@ -225,20 +225,25 @@
         spacing: 10
         BoxBlack:
             size_hint_x: 0.3
-
-            Label:
+# Label Appversion
+            LabJuraMedium:
                 text: app.app_version
+# Fillbox        
         BoxBlack:
+# Box Button left in Bottombox            
         BoxBlack:
             size_hint_x: 0.3
+# Button left in Bottombox            
             ButtonGrey:
-                id: but_settings
+                id: but_1
                 font_size: self.height * 0.5
                 on_release: app.change_Screen('left', 'page_settings') if app.scr_man.current == 'page_start' else app.change_Screen('right', 'page_start')
+# Box Button right in Bottombox            
         BoxBlack:
             size_hint_x: 0.3
+# Button right in Bottombox            
             ButtonGrey:
-                id: but_quit
+                id: but_2
                 font_size: self.height * 0.5
                 on_release: app.stop()
 ###

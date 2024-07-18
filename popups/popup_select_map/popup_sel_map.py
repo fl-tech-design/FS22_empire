@@ -3,15 +3,25 @@ from kivy.uix.image import Image
 from kivy.core.window import Window
 from kivy.lang import Builder
 
-from constants import DIR_POPUPS, DIR_IMAGES, PATH_DIR_IMG_CHO, DIR_MAPS
+
+from constants import (
+    DIR_POPUPS,
+    DIR_SPLASH_SCR,
+    PATH_DIR_IMG_CHO,
+    DIR_MAPS,
+    DIR_SIGNS,
+)
+
+from pages.loadingpage.loading_page import LoadingScreen
 
 Builder.load_file(DIR_POPUPS + "popup_select_map/popup_sel_map.kv")
 
 
 class PopupSelectMap(Popup):
-    def __init__(self, app, **kwargs):
+    def __init__(self, scr_man, app, **kwargs):
         super(PopupSelectMap, self).__init__(**kwargs)
         self.app = app
+        self.scr_man = scr_man
         self.txt_lab = self.app.lab_txt
         self.map_list = self.app.data_app["map_list"]
         self.map_index = 0
@@ -30,9 +40,9 @@ class PopupSelectMap(Popup):
         self.ids.box_index_grid.clear_widgets()
         for i in range(len(self.app.data_app["map_list"])):
             if i == self.map_index:
-                img_src = DIR_IMAGES + "img_sign_point_white.png"
+                img_src = DIR_SIGNS + "img_sign_point_white.png"
             else:
-                img_src = DIR_IMAGES + "img_sign_point_blue.png"
+                img_src = DIR_SIGNS + "img_sign_point_blue.png"
             img = Image(source=img_src)
             self.ids.box_index_grid.add_widget(img)
 
@@ -76,7 +86,22 @@ class PopupSelectMap(Popup):
         )
 
     def start_New_Game(self, *args):
-        pass
+        # Erstelle eine Instanz von LoadingScreen
+        spl_scr_map = LoadingScreen(
+            self.scr_man,
+            self.app,
+            self.txt_lab,
+            DIR_SPLASH_SCR + "img_spl_" + self.map_list[self.map_index] + ".png",
+            "page_main_game",
+            0.15,
+            0.04,
+            name=self.map_list[self.map_index],
+        )
+        # Füge die Instanz von LoadingScreen zum ScreenManager hinzu
+        self.scr_man.add_widget(spl_scr_map)
+        self.dismiss()
+        # Wechsle zum LoadingScreen
+        self.app.scr_man.current = self.map_list[self.map_index]
 
     def decr_map_index(self):
         if self.map_index > 0:

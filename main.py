@@ -10,8 +10,9 @@ from constants import *
 from pages.loadingpage.loading_page import LoadingScreen
 from pages.page_start.startpage import StartPage
 from pages.page_settings.settingpage import SettingPage
-from pages.buyitempage.buyitempage import BuyItemPage
+from pages.page_buy_item.pagebuyitem import PageBuyItem
 from pages.maplayoutpage.maplayoutpage import PageMapLayout
+from pages.page_main_game.pagemaingame import PageMainGame
 
 from popups.popup_help.popup_help import PopupHelp
 from popups.popup_new_lkw import Popup_New_Lkw
@@ -29,7 +30,7 @@ Builder.load_file(PATH_KV_WIDGETS)
 
 
 class PopupControl:
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, scr_man, **kwargs) -> None:
         """
         Initialisierung der Variabeln.
         """
@@ -51,24 +52,13 @@ class PopupControl:
         popup = CompanySelectionPopup(app.lab_txt)
         popup.open()
 
-    def create_New_Game(self, *args):
-        popup = PopupSelectMap(app)
+    def create_New_Game(self, scr_man, *args):
+        popup = PopupSelectMap(scr_man, app)
         popup.open()
 
     def open_Help_popup(self, page_name, *args):
         popup = PopupHelp(app, page_name)
         popup.open()
-            
-        
-class Page5(Screen):
-    def __init__(self, **kwargs):
-        super(Page5, self).__init__(**kwargs)
-        self.data_curr_game = {}
-
-    def update_Page_5(self):
-        self.ids.box_tit.ids.lab_tit.text = self.f_let_upper(
-            app.lab_txt["in_the_office"]
-        )
 
 
 class MainApp(App):
@@ -77,7 +67,8 @@ class MainApp(App):
         app = self
         # Klassenw werden initialisiert
         self.control_data = DataControl(app)
-        self.popup_control = PopupControl()
+        self.scr_man = ScreenManager()
+        self.popup_control = PopupControl(self.scr_man)
 
         # Daten werden geladen
         self.data_app = self.control_data.read_data_app()
@@ -107,16 +98,20 @@ class MainApp(App):
         self.map_select_state = 0
 
         # Klasse ScreenManager wird initialisiert.
-        self.scr_man = ScreenManager()
 
         # Definition LoadingScreen Start App
-        self.loading_screen = LoadingScreen(
-            self.scr_man, self.lab_txt, SPL_SCREEN_START_APP, name="loading_screen"
+        self.spl_scr_start = LoadingScreen(
+            self.scr_man,
+            app,
+            self.lab_txt,
+            SPL_SCREEN_START_APP,
+            "page_start",
+            name="spl_scr_start",
         )
-        self.scr_man.add_widget(self.loading_screen)
+        self.scr_man.add_widget(self.spl_scr_start)
 
         # Definition Page One. The Startscreen
-        self.page_start = StartPage(app)
+        self.page_start = StartPage(app, self.scr_man)
         screen = Screen(name="page_start")
         screen.add_widget(self.page_start)
         self.scr_man.add_widget(screen)
@@ -134,48 +129,32 @@ class MainApp(App):
         self.scr_man.add_widget(screen)
 
         # Definition Page Four. The "buy new Truck screen"
-        self.buy_item_page = BuyItemPage(app)
-        screen = Screen(name="buy_item_page")
-        screen.add_widget(self.buy_item_page)
+        self.page_buy_item = PageBuyItem(app)
+        screen = Screen(name="page_buy_item")
+        screen.add_widget(self.page_buy_item)
         self.scr_man.add_widget(screen)
 
         # Definition Page Five. The Mainscreen of the Game
-        self.page5 = Page5()
-        screen = Screen(name="page_5")
-        screen.add_widget(self.page5)
+        self.page_main_game = PageMainGame(app, self.scr_man)
+        screen = Screen(name="page_main_game")
+        screen.add_widget(self.page_main_game)
         self.scr_man.add_widget(screen)
 
-        # GameTime vars
-        self.clock_set_stat = False
-        self.time_scale = 1
-        self.time_game_h = 0
-        self.time_game_m = 0
-        self.loop_counter = 0
-        
-        # Clock loop 
+
+        # Clock loop
         Clock.schedule_interval(self.update_app_loop, 0.2)
         Clock.max_iteration = 22  # Standardwert ist 20
-
         # start app
         return self.scr_man
 
     def update_app_loop(self, *args):
-        self.loop_counter += 1
-        if self.clock_set_stat:
-            if self.loop_counter % 300 / self.time_scale == 1:
-                self.time_game_m += 1
-                if self.time_game_m >= 59:
-                    self.time_game_m = 0
-                    self.time_game_h += 1
-                    if self.time_game_h > 23:
-                        self.time_game_h = 0
 
         if self.scr_man.current == "page_start":
             self.page_start.update_page_start()
         elif self.scr_man.current == "page_settings":
             self.page_settings.update_page_settings()
         elif self.scr_man.current == "page_4":
-            self.buy_item_page.update_labels()
+            self.page_buy_item.update_labels()
         elif self.scr_man.current == "page_5":
             self.page5.update_Page_5()
 
@@ -214,7 +193,7 @@ class MainApp(App):
             self.curr_player = username
             self.curr_u_data = app.control_data.get_curr_player_data(username)
         self.control_data.set_Data_App("curr_player_name", username)
-        self.control_data.set_Last_Login(username);
+        self.control_data.set_Last_Login(username)
 
     def start_Saved_Game(self, game_data: dict):
         self.curr_g_data = game_data

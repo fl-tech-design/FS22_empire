@@ -165,6 +165,7 @@
             "last_login": "letztes Login",
             "last_save": "letzte Speicherung",
             "logout": "ausloggen",
+            "main_menu": "Hauptmenü",
             "my_factories": "Meine Fabriken",
             "new_car": "Neues Auto",
             "new_game": "Neues Spiel",
@@ -179,6 +180,7 @@
             "num_of_fields": "die Felderanzahl",
             "num_of_sa_games": " Anzahl gespeicherter Spiele",
             "ok": "ok",
+            "page_main_game": "Hauptseite Spiel",
             "page_start": "Startseite",
             "page_settings": "Einstellungsseite",
             "pl_games": "gespielte Spiele",
@@ -205,6 +207,7 @@
             "Would_you_like_to_buy_this_vehicle?": "Möchten Sie dieses Fahrzeug kaufen?"
         },
         "descr": {
+            "descr_help_page_main_game": "Hier kommt die ganze Hilfe für die Spiel Hauptseite hinein",
             "descr_help_page_start": "Hier kommt die ganze Hilfe für die Startseite hinein",
             "descr_help_page_settings": "Hier kommt die ganze Hilfe für die Einstellungsseite hinein",
             "descr_admin_sett": "Für diese Einstellungen brauchen Sie Admin Zugriff. Bitte Button drücken und Passwort eingeben.",
