@@ -17,8 +17,8 @@ class LoadingScreen(Screen):
         lab_txt,
         spl_scr,
         new_page,
-        prog_bar_y=0.2,
-        stat_lab_y=0.15,
+        prog_bar_y=0.16,
+        stat_lab_y=0.12,
         **kwargs,
     ):
         super(LoadingScreen, self).__init__(**kwargs)
@@ -31,13 +31,6 @@ class LoadingScreen(Screen):
         # Hintergrundbild
         self.background = Image(source=spl_scr, fit_mode="fill")
         layout.add_widget(self.background)
-
-        # Fortschrittsanzeige
-        self.progress_bar = ProgressBar(
-            max=100, size_hint=(1, 0.25), pos_hint={"x": 0, "y": prog_bar_y}
-        )
-        layout.add_widget(self.progress_bar)
-
         # Statuslabel
         self.status_label = Label(
             size_hint=(0.8, 0.15),
@@ -45,6 +38,13 @@ class LoadingScreen(Screen):
             pos_hint={"x": 0.1, "y": stat_lab_y},
         )
         layout.add_widget(self.status_label)
+
+        # Fortschrittsanzeige
+        self.progress_bar = ProgressBar(
+            max=100, size_hint=(1, 0.25), pos_hint={"x": 0, "y": prog_bar_y}
+        )
+        layout.add_widget(self.progress_bar)
+
 
         self.add_widget(layout)
 

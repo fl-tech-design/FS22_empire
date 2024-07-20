@@ -93,8 +93,8 @@ class PopupSelectMap(Popup):
             self.txt_lab,
             DIR_SPLASH_SCR + "img_spl_" + self.map_list[self.map_index] + ".png",
             "page_main_game",
-            0.15,
-            0.04,
+            0.005,
+            0.001,
             name=self.map_list[self.map_index],
         )
         # Füge die Instanz von LoadingScreen zum ScreenManager hinzu

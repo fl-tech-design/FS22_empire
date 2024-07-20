@@ -54,7 +54,6 @@ class DataControl:
             trucks = json.load(f)
         return trucks
 
-
     def set_Data_App(self, data_key: str, data_value: str) -> None:
         """
         Updates the application configuration data in the app_config.json file.
@@ -92,6 +91,19 @@ class DataControl:
             index = userliste.index("")
             userliste[index] = neuer_uname
         return userliste
+
+    def read_Curr_Map_Data(self, curr_map: str):
+        try:
+            with open(f"{DIR_MAPS}{curr_map}", "r", encoding="utf-8") as datei:
+                daten = json.load(datei)
+            return daten
+        except FileNotFoundError as fe:
+            print(f"Die {fe} wurde nicht gefunden.")
+        except json.JSONDecodeError:
+            print("Die Datei ist keine gültige JSON-Datei.")
+        except Exception as e:
+            print(f"Ein Fehler ist aufgetreten: {e}")
+            return None
 
     def get_curr_player_data(self, curr_player_name: str):
         try:
