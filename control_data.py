@@ -10,7 +10,9 @@ class DataControl:
         """
         self.app = app
 
-    def read_data_app(self):
+
+
+    def return_Data_App(self):
         try:
             with open(PATH_DATA_APP, "r", encoding="utf-8") as datei:
                 daten = json.load(datei)
@@ -23,20 +25,8 @@ class DataControl:
             print(f"Ein Fehler ist aufgetreten: {e}")
             return None
 
-    def read_data_game(self):
-        try:
-            with open(PATH_DATA_GAME, "r", encoding="utf-8") as datei:
-                daten = json.load(datei)
-            return daten
-        except FileNotFoundError as fe:
-            print(f"Die {fe} wurde nicht gefunden.")
-        except json.JSONDecodeError:
-            print("Die Datei ist keine gültige JSON-Datei.")
-        except Exception as e:
-            print(f"Ein Fehler ist aufgetreten: {e}")
-            return None
 
-    def read_data_txt(self, curr_language):
+    def return_Lab_Txt(self, curr_language):
         try:
             with open(PATH_DATA_TXT, "r", encoding="utf-8") as datei:
                 daten = json.load(datei)
@@ -49,11 +39,20 @@ class DataControl:
             print(f"Ein Fehler ist aufgetreten: {e}")
             return None
 
-    def load_trucks_from_json(self):
-        with open(DF_TRUCKS, "r", encoding="utf-8") as f:
-            trucks = json.load(f)
-        return trucks
+    def return_Map_Data(self, card_names: list):
+        cards = {}
 
+        for card_name in card_names:
+            json_filename = f"{DIR_MAPS}{card_name}/{card_name}.json"
+            try:
+                with open(json_filename, 'r') as f:
+                    cards[card_name] = json.load(f)
+            except FileNotFoundError:
+                print(f"Datei nicht gefunden: {json_filename}")
+            except json.JSONDecodeError as e:
+                print(f"JSON-Decode-Fehler in Datei {json_filename}: {e}")
+
+        return cards
     def set_Data_App(self, data_key: str, data_value: str) -> None:
         """
         Updates the application configuration data in the app_config.json file.
@@ -86,24 +85,27 @@ class DataControl:
             json.dump(data, file)
         self.app.curr_u_data = self.get_curr_player_data(curr_uname)
 
-    def remove_empty_list_item(self, userliste: list, neuer_uname: str):
+    def set_Uname_to_Userlist(self, userliste: list, neuer_uname: str):
         if "" in userliste:
             index = userliste.index("")
             userliste[index] = neuer_uname
+        else:
+            userliste.append(neuer_uname)
         return userliste
 
     def read_Curr_Map_Data(self, curr_map: str):
-        try:
-            with open(f"{DIR_MAPS}{curr_map}", "r", encoding="utf-8") as datei:
-                daten = json.load(datei)
-            return daten
-        except FileNotFoundError as fe:
-            print(f"Die {fe} wurde nicht gefunden.")
-        except json.JSONDecodeError:
-            print("Die Datei ist keine gültige JSON-Datei.")
-        except Exception as e:
-            print(f"Ein Fehler ist aufgetreten: {e}")
-            return None
+        if curr_map:
+            try:
+                with open(f"{DIR_MAPS}{curr_map}", "r", encoding="utf-8") as datei:
+                    daten = json.load(datei)
+                return daten
+            except FileNotFoundError as fe:
+                print(f"Die {fe} wurde nicht gefunden.")
+            except json.JSONDecodeError:
+                print("Die Datei ist keine gültige JSON-Datei.")
+            except Exception as e:
+                print(f"Ein Fehler ist aufgetreten: {e}")
+                return None
 
     def get_curr_player_data(self, curr_player_name: str):
         try:

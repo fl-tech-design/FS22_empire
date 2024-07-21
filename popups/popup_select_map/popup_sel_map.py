@@ -40,9 +40,9 @@ class PopupSelectMap(Popup):
         self.ids.box_index_grid.clear_widgets()
         for i in range(len(self.app.data_app["map_list"])):
             if i == self.map_index:
-                img_src = DIR_SIGNS + "img_sign_point_white.png"
+                img_src = DIR_SIGNS + "sign_point_white.png"
             else:
-                img_src = DIR_SIGNS + "img_sign_point_blue.png"
+                img_src = DIR_SIGNS + "sign_point_blue.png"
             img = Image(source=img_src)
             self.ids.box_index_grid.add_widget(img)
 

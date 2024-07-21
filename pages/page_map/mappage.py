@@ -26,11 +26,11 @@ class PageMap(FloatLayout):
         self.arrow_buttons = {}
         self.current_arrow_id = None
 
-        self.current_g_name = "sosnovka_240624"
+        self.current_g_name = ""
 
         # Hintergrundbild hinzufügen
         self.background = Image(
-            source=f"{DIR_MAPS}{self.app.data_app['maps']['sosnovka']}",
+            source = "",
             fit_mode="fill",
         )
         self.add_widget(self.background)

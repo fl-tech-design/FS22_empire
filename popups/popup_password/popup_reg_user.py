@@ -47,7 +47,7 @@ class RegisterPopup(Popup):
         password = self.ids.password_input.text
         if register_user(username, password):
             self.show_info("User registered successfully")
-            self.app.control_data.remove_empty_list_item(
+            self.app.control_data.set_Uname_to_Userlist(
                 self.app.saved_players, username
             )
             self.app.control_data.set_Data_App("saved_players", self.app.saved_players)

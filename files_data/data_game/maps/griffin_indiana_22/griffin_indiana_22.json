@@ -1,0 +1,47 @@
+{
+    "griffin_indiana_22": {
+        "map_name": "Griffin Indiana 22",
+        "img_map": "img_map_griffin_indiana_22.png",
+        "img_sel_map": "img_cho_griffin_indiana_22.png",
+        "img_spl_scr": "img_spl_griffin_indiana_22.png",
+        "info_map": [
+            "18 Waggons",
+            "15 Minuten Zugintervall",
+            "21 bemalbare Gel\u00e4ndetexturen",
+            "3 eingebaute, platzierbare alte Scheunen",
+            "1 eingebautes platzierbares altes G\u00e4rsilo",
+            "5 Produktionspunkte mit Farmland, das beim Kauf erworben wird",
+            "26 kaufbare innerst\u00e4dtische Wohngrundst\u00fccke mit Scheunen, die einzeln verkauft werden k\u00f6nnen",
+            "7 kaufbare, innerst\u00e4dtische, leere Produktionsgrundst\u00fccke",
+            "1 kaufbares Motel-Grundst\u00fcck, schwer zu sehen auf der PDA",
+            "4 kaufbare Camping-Grundst\u00fccke, auf der PDA schwer zu sehen",
+            "1 Hauptbetrieb mit allen Geb\u00e4uden einzeln verkaufbar und Umz\u00e4unung abnehmbar",
+            "8 Nebenfarmen mit allen Scheunen einzeln verkaufbar und Umz\u00e4unung abnehmbar",
+            "3 f\u00fcr die Forstwirtschaft gewidmetes Ackerland",
+            "16 Ackerland Wald und Wiese",
+            "31 Ackerland mit Ackerfl\u00e4chen 220ha",
+            "7 Ackerland mit Grasfl\u00e4chen 14ha",
+            "234 Hektar Gesamt bearbeitungsf\u00e4hig",
+            "106 Ackerfl\u00e4chen",
+            "10250 B\u00e4ume"
+        ],
+        "location": "Midwestern USA",
+        "num_of_fields": "",
+        "factory_pos": {
+            "app_pics/img_signs/arrow1.png_0": {
+                "image": "app_pics/img_signs/arrow1.png",
+                "pos": [
+                    767,
+                    723
+                ]
+            },
+            "app_pics/img_signs/arrow4.png_1": {
+                "image": "app_pics/img_signs/arrow4.png",
+                "pos": [
+                    1048,
+                    917
+                ]
+            }
+        }
+    }
+}

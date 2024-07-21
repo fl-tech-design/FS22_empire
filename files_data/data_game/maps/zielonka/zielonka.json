@@ -1,0 +1,26 @@
+{
+    "zielonka": {
+        "map_name": "Zielonka",
+        "img_map": "img_map_zielonka.png",
+        "img_sel_map": "img_cho_zielonka.png",
+        "img_spl_scr": "img_spl_zielonka.png",
+        "location": "",
+        "num_of_fields": "",
+        "factory_pos": {
+            "app_pics/img_signs/arrow1.png_0": {
+                "image": "app_pics/img_signs/arrow1.png",
+                "pos": {
+                    "x": 0.1,
+                    "y": 0.8
+                }
+            },
+            "app_pics/img_signs/arrow4.png_1": {
+                "image": "app_pics/img_signs/arrow4.png",
+                "pos": [
+                    1048,
+                    917
+                ]
+            }
+        }
+    }
+}

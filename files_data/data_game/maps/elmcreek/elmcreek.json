@@ -1,0 +1,339 @@
+{
+    "elmcreek": {
+        "map_name": "Elmcreek",
+        "img_map": "img_map_elmcreek.png",
+        "img_sel_map": "img_cho_elmcreek.png",
+        "img_spl_scr": "img_spl_elmcreek.png",
+        "location": "Midwestern USA",
+        "sammelobjekte": "",
+        "num_of_fields": "62",
+        "fields": {
+            "1": {
+                "size": 1.334367,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "2": {
+                "size": 0.889578,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "3": {
+                "size": 0.741315,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "4": {
+                "size": 0.7166045,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "5": {
+                "size": 0.7166045,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "6": {
+                "size": 1.2108145,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "7": {
+                "size": 2.2980765,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "8": {
+                "size": 4.546732,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "9": {
+                "size": 4.6208635000000005,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "10": {
+                "size": 14.084985,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "11": {
+                "size": 6.029362,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "12": {
+                "size": 2.47105,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "13": {
+                "size": 0.5189205,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "14": {
+                "size": 0.543631,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "15": {
+                "size": 0.6177625,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "16": {
+                "size": 0.6177625,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "17": {
+                "size": 0.6671835,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "18": {
+                "size": 3.113523,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "19": {
+                "size": 1.235525,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "20": {
+                "size": 0.4200785,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "21": {
+                "size": 0.5683415,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "22": {
+                "size": 2.5451815,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "23": {
+                "size": 1.680314,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "24": {
+                "size": 1.6556035,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "25": {
+                "size": 10.674936,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "26": {
+                "size": 0.6671835,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "27": {
+                "size": 1.8532875,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "28": {
+                "size": 2.7922865,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "29": {
+                "size": 2.5451815,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "30": {
+                "size": 6.5482825,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "31": {
+                "size": 9.735937,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "32": {
+                "size": 16.3336405,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "33": {
+                "size": 16.3336405,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "34": {
+                "size": 2.7181550000000003,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "35": {
+                "size": 2.273366,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "36": {
+                "size": 2.8417074999999996,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "37": {
+                "size": 2.520471,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "38": {
+                "size": 10.872620000000001,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "39": {
+                "size": 10.922041,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "40": {
+                "size": 2.9899705,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "41": {
+                "size": 4.843258,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "42": {
+                "size": 4.744416,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "43": {
+                "size": 2.1992345,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "44": {
+                "size": 0.444789,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "45": {
+                "size": 0.889578,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "46": {
+                "size": 0.7166045,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "47": {
+                "size": 1.7544454999999999,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "48": {
+                "size": 1.48263,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "49": {
+                "size": 1.037841,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "50": {
+                "size": 3.755996,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "51": {
+                "size": 3.064102,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "52": {
+                "size": 2.174524,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "53": {
+                "size": 4.349048,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "54": {
+                "size": 4.546732,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "55": {
+                "size": 2.421629,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "56": {
+                "size": 6.8695189999999995,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "57": {
+                "size": 11.9845925,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "58": {
+                "size": 7.956781,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "59": {
+                "size": 4.546732,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "60": {
+                "size": 2.619313,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "61": {
+                "size": 1.6308930000000001,
+                "cost": "",
+                "cost_p_acre": ""
+            },
+            "62": {
+                "size": 1.6308930000000001,
+                "cost": "",
+                "cost_p_acre": ""
+            }
+        },
+        "factory_pos": {
+            "app_pics/arrow1.png_0": {
+                "image": "app_pics/img_signs/arrow1.png",
+                "pos": [
+                    767,
+                    723
+                ]
+            },
+            "app_pics/img_signs/arrow4.png_1": {
+                "image": "app_pics/img_signs/arrow4.png",
+                "pos": [
+                    1048,
+                    917
+                ]
+            }
+        }
+    }
+}

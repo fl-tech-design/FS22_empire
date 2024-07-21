@@ -1,0 +1,568 @@
+{
+    "haut_beyleron": {
+        "map_name": "Haut-Beyleron",
+        "img_map": "img_map_haut_beyleron.png",
+        "img_sel_map": "img_cho_haut_beyleron.png",
+        "img_spl_scr": "img_spl_haut_beyleron.png",
+        "location": "france",
+        "collect": "collect_h_bey",
+        "num_of_fields": "48",
+        "num_of_lands": "55",
+        "already_installed": [
+            {
+                "name": "gasstation_n",
+                "pos": [
+                    100,
+                    100
+                ],
+                "img": "gasstation_n.png",
+                "img_icon": "img_sign_gasoil.png"
+            },
+            {
+                "name": "biogas",
+                "pos": [
+                    150,
+                    150
+                ],
+                "img": "biogas.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "marissonne_north",
+                "pos": [
+                    200,
+                    150
+                ],
+                "img": "marissonne_north.png",
+                "img_icon": "img_sign_trainstation.png"
+            },
+            {
+                "name": "rent_a_train_0",
+                "pos": [
+                    200,
+                    150
+                ],
+                "img": "rent_a_train_0.png",
+                "img_icon": "img_sign_rent_a_train.png"
+            },
+            {
+                "name": "sawmill_north",
+                "pos": [
+                    1600,
+                    900
+                ],
+                "img": "sawmill_north.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "carpentry",
+                "pos": [
+                    1550,
+                    820
+                ],
+                "img": "carpentry.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "kalkstation_0",
+                "pos": [
+                    1600,
+                    750
+                ],
+                "img": "kalkstation_0.png",
+                "img_icon": "img_sign_buy.png"
+            },
+            {
+                "name": "trainstation_n_0",
+                "pos": [
+                    1600,
+                    690
+                ],
+                "img": "trainstation_n_0.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "trainstation_n_1",
+                "pos": [
+                    1520,
+                    700
+                ],
+                "img": "trainstation_n_1.png",
+                "img_icon": "img_sign_trainstation.png"
+            },
+            {
+                "name": "rent_a_train_1",
+                "pos": [
+                    1550,
+                    750
+                ],
+                "img": "rent_a_train_1.png",
+                "img_icon": "img_sign_rent_a_train.png"
+            },
+            {
+                "name": "kalkstation_1",
+                "pos": [
+                    1750,
+                    700
+                ],
+                "img": "kalkstation_1.png",
+                "img_icon": "img_sign_buy.png"
+            },
+            {
+                "name": "ghsb_getreidespeicher",
+                "pos": [
+                    1800,
+                    680
+                ],
+                "img": "ghsb_getreidespeicher.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "spinery_la_filature",
+                "pos": [
+                    1750,
+                    420
+                ],
+                "img": "spinery_la_filature.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "spinery_la_filature",
+                "pos": [
+                    1750,
+                    420
+                ],
+                "img": "spinery_la_filature.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "vehicles_dealer",
+                "pos": [
+                    1750,
+                    300
+                ],
+                "img": "vehicles_dealer.png",
+                "img_icon": "img_sign_shop.png"
+            },
+            {
+                "name": "gasstation_center",
+                "pos": [
+                    1660,
+                    320
+                ],
+                "img": "gasstation_center.png",
+                "img_icon": "img_sign_gasoil.png"
+            },
+            {
+                "name": "fromage_de_lune",
+                "pos": [
+                    1460,
+                    330
+                ],
+                "img": "fromage_de_lune.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "bakery_au_fournil",
+                "pos": [
+                    1300,
+                    400
+                ],
+                "img": "bakery_au_fournil.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "getreidemühle",
+                "pos": [
+                    1300,
+                    400
+                ],
+                "img": "getreidemühle.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "getreidemühle",
+                "pos": [
+                    1300,
+                    400
+                ],
+                "img": "getreidemühle.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "shop_le_jardin",
+                "pos": [
+                    400,
+                    800
+                ],
+                "img": "shop_le_jardin.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "raisins_factory",
+                "pos": [
+                    200,
+                    800
+                ],
+                "img": "raisins_factory.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "stone_breaker",
+                "pos": [
+                    600,
+                    500
+                ],
+                "img": "stone_breaker.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "livestock_market_0",
+                "pos": [
+                    700,
+                    500
+                ],
+                "img": "livestock_market_0.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "livestock_market_1",
+                "pos": [
+                    500,
+                    450
+                ],
+                "img": "livestock_market_1.png",
+                "img_icon": "img_sign_animals.png"
+            },
+            {
+                "name": "biogas_1mw",
+                "pos": [
+                    200,
+                    200
+                ],
+                "img": "biogas_1mw.png",
+                "img_icon": "img_sign_sell.png"
+            },
+            {
+                "name": "biomethan",
+                "pos": [
+                    240,
+                    180
+                ],
+                "img": "biomethan.png",
+                "img_icon": "img_sign_gasoil.png"
+            },
+            {
+                "name": "el_loading",
+                "pos": [
+                    200,
+                    100
+                ],
+                "img": "el_loading.png",
+                "img_icon": "img_sign_el_loading.png"
+            },
+            {
+                "name": "gasstation_south",
+                "pos": [
+                    320,
+                    100
+                ],
+                "img": "gasstation_south.png",
+                "img_icon": "img_sign_gasoil.png"
+            },
+            {
+                "name": "kalkstation_2",
+                "pos": [
+                    600,
+                    100
+                ],
+                "img": "kalkstation_2.png",
+                "img_icon": "img_sign_buy.png"
+            },
+            {
+                "name": "trainstation_s_0",
+                "pos": [
+                    650,
+                    100
+                ],
+                "img": "trainstation_s_0.png",
+                "img_icon": "img_sign_unload.png"
+            },
+            {
+                "name": "trainstation_s_1",
+                "pos": [
+                    660,
+                    60
+                ],
+                "img": "trainstation_s_1.png",
+                "img_icon": "img_sign_trainstation.png"
+            },
+            {
+                "name": "trainstation_s_1",
+                "pos": [
+                    660,
+                    60
+                ],
+                "img": "trainstation_s_1.png",
+                "img_icon": "img_sign_trainstation.png"
+            },
+            {
+                "name": "rent_a_train_2",
+                "pos": [
+                    580,
+                    60
+                ],
+                "img": "rent_a_train_2.png",
+                "img_icon": "img_sign_rent_a_train.png"
+            },
+            {
+                "name": "marissonne_south",
+                "pos": [
+                    1800,
+                    100
+                ],
+                "img": "marissonne_south.png",
+                "img_icon": "img_sign_trainstation.png"
+            },
+            {
+                "name": "farmhouse_0",
+                "pos": [
+                    1600,
+                    500
+                ],
+                "img": "farmhouse_0.png",
+                "img_icon": "img_sign_home.png"
+            }
+        ],
+        "lands": {
+            "1": {
+                "total_price": 50000,
+                "fields": {
+                    "size_ha": 0.8,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "2": {
+                "total_price": 55000,
+                "fields": {
+                    "size_ha": 0.88,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "3": {
+                "total_price": 96000,
+                "fields": {
+                    "size_ha": 1.54,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "4": {
+                "total_price": 254000,
+                "fields": {
+                    "size_ha": 4.06,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "5": {
+                "total_price": 434000,
+                "fields": {
+                    "size_ha": 6.95,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "6": {
+                "total_price": 236250,
+                "fields": {
+                    "size_ha": 3.78,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "7": {
+                "total_price": 25625,
+                "fields": {
+                    "size_ha": 0.41,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "8": {
+                "total_price": 45000,
+                "fields": {
+                    "size_ha": 0.72,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "9": {
+                "total_price": 250625,
+                "fields": {
+                    "size_ha": 4.01,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "10": {
+                "total_price": 193125,
+                "fields": {
+                    "size_ha": 3.09,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "11": {
+                "total_price": 186700,
+                "fields": {
+                    "size_ha": 3.15,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "12": {
+                "total_price": 76450,
+                "fields": {
+                    "size_ha": 1.22,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "13": {
+                "total_price": 200000,
+                "fields": {
+                    "size_ha": 3.2,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "14": {
+                "total_price": 78000,
+                "fields": {
+                    "size_ha": 1.56,
+                    "price_per_ha": 50000,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "15": {
+                "total_price": 218750,
+                "fields": {
+                    "size_ha": 3.5,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "16": {
+                "total_price": 93125,
+                "fields": {
+                    "size_ha": 1.49,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "17": {
+                "total_price": 33250,
+                "fields": {
+                    "size_ha": 0.53,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "18": {
+                "total_price": 230625,
+                "fields": {
+                    "size_ha": 3.69,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            },
+            "19": {
+                "total_price": 406250,
+                "fields": {
+                    "size_ha": 6.5,
+                    "price_per_ha": 62500,
+                    "lehmiger_sand": 0,
+                    "sandiger_lehm": 0,
+                    "lehm": 0,
+                    "schluffiger_ton": 0,
+                    "erwartetes_ertragspotential": 0
+                }
+            }
+        }
+    }
+}

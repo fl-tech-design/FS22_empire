@@ -71,10 +71,9 @@ class MainApp(App):
         self.popup_control = PopupControl(self.scr_man)
 
         # Daten werden geladen
-        self.data_app = self.control_data.read_data_app()
+        self.data_app = self.control_data.return_Data_App()
         self.curr_language = self.data_app["curr_language"]
-        self.lab_txt = self.control_data.read_data_txt(self.curr_language)
-        self.data_trucks = self.control_data.load_trucks_from_json()
+        self.lab_txt = self.control_data.return_Lab_Txt(self.curr_language)
         self.len_list_map = len(self.data_app["map_list"])
 
         # App Grundeinstellungen werden gesetzt
@@ -82,22 +81,30 @@ class MainApp(App):
         self.title = self.data_app["app_name"]
         self.app_version = VERSION_NR
 
-        # Spielvariabeln werden erstellt
+        # Uservariabel werden erstellt
         self.curr_u_name = ""
         self.curr_player = ""
         self.curr_u_data = {}
+        self.curr_userdata = load_user_data()
+
+        # Mapvariabeln werden erstellt
+        self.map_list = self.data_app["map_list"]
+        print(self.map_list)
+        map_data = self.control_data.return_Map_Data(self.map_list)
+        print("map_data:\n", map_data)
+        self.curr_map_name = ""
         self.curr_map = ""
 
+        # Spielvariabeln werden definiert. diese Variabeln werden für den Spielstand eines Spiels gebraucht, also wiederverwendbar
+        # für andere Spielstände
         self.curr_g_data = {}
 
-        self.loaded_user_data_from_curr_player = load_user_data()
 
+        # allgemeine gamevariabeln.
         self.saved_players = self.data_app["saved_players"]
         self.saved_players_index = 0
 
-        self.map_select_state = 0
 
-        # Klasse ScreenManager wird initialisiert.
 
         # Definition LoadingScreen Start App
         self.spl_scr_start = LoadingScreen(
@@ -148,7 +155,6 @@ class MainApp(App):
         return self.scr_man
 
     def update_app_loop(self, *args):
-
         if self.scr_man.current == "page_start":
             self.page_start.update_page_start()
         elif self.scr_man.current == "page_settings":
@@ -177,10 +183,9 @@ class MainApp(App):
         self.status = True  # Beispiel: Zeitstatus auf True setzen
 
     def reload_app_data(self):
-        self.data_app = self.control_data.read_data_app()
+        self.data_app = self.control_data.return_Data_App()
         self.curr_language = self.data_app["curr_language"]
-        self.lab_txt = self.control_data.read_data_txt(self.curr_language)
-        self.data_trucks = self.control_data.load_trucks_from_json()
+        self.lab_txt = self.control_data.return_Lab_Txt(self.curr_language)
         self.saved_players = self.data_app["saved_players"]
 
     def open_login_popup(self):

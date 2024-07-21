@@ -1,0 +1,170 @@
+{
+    "erlengrat": {
+        "map_name": "Erlengrat",
+        "img_map": "img_map_erlengrat.png",
+        "img_sel_map": "img_cho_erlengrat.png",
+        "img_spl_scr": "img_spl_erlengrat.png",
+        "location": "Swiss Alps",
+        "collect": "",
+        "num_of_fields": "25",
+        "already_installed": [
+            "Viehandel",
+            "Straig Lager",
+            "3x Zug mieten",
+            "2x Tankstelle",
+            "2x Kalkstation",
+            "Spinnerei",
+            "Liechti Chocolatier",
+            "M\u00fchle",
+            "Biogasanlage",
+            "K\u00e4serei Erlengrat",
+            "Fahrzeugh\u00e4ndler",
+            "Supermarkt",
+            "GLW",
+            "S\u00e4gewerk"
+        ],
+        "fields": {
+            "1": {
+                "size": 4.34,
+                "cost": 193240,
+                "cost_p_acre": 44525.35
+            },
+            "2": {
+                "size": 6.09,
+                "cost": 238300,
+                "cost_p_acre": 39129.17
+            },
+            "3": {
+                "size": 9.53,
+                "cost": 234760,
+                "cost_p_acre": 24633.79
+            },
+            "4": {
+                "size": 6.07,
+                "cost": 285080,
+                "cost_p_acre": 46956.4
+            },
+            "5": {
+                "size": 5.42,
+                "cost": 172340,
+                "cost_p_acre": 31797.05
+            },
+            "6": {
+                "size": 2.7,
+                "cost": 102160,
+                "cost_p_acre": 37837.04
+            },
+            "7": {
+                "size": 3.95,
+                "cost": 171720,
+                "cost_p_acre": 43726.58
+            },
+            "8": {
+                "size": 5.02,
+                "cost": 180240,
+                "cost_p_acre": 35904.38
+            },
+            "9": {
+                "size": 9.83,
+                "cost": 189200,
+                "cost_p_acre": 19247.2
+            },
+            "10": {
+                "size": 6.88,
+                "cost": 202020,
+                "cost_p_acre": 29363.37
+            },
+            "11": {
+                "size": 7.93,
+                "cost": 209800,
+                "cost_p_acre": 26456.49
+            },
+            "12": {
+                "size": 6.7,
+                "cost": 181600,
+                "cost_p_acre": 27104.48
+            },
+            "13": {
+                "size": 5.95,
+                "cost": 160000,
+                "cost_p_acre": 26890.76
+            },
+            "14": {
+                "size": 11.89,
+                "cost": 304340,
+                "cost_p_acre": 25596.3
+            },
+            "15": {
+                "size": 7.68,
+                "cost": 251020,
+                "cost_p_acre": 32684.9
+            },
+            "16": {
+                "size": 7.77,
+                "cost": 222960,
+                "cost_p_acre": 28694.98
+            },
+            "17": {
+                "size": 6.03,
+                "cost": 249280,
+                "cost_p_acre": 41339.97
+            },
+            "18": {
+                "size": 4.81,
+                "cost": 140260,
+                "cost_p_acre": 29160.08
+            },
+            "19": {
+                "size": 6.85,
+                "cost": 180400,
+                "cost_p_acre": 26335.77
+            },
+            "20": {
+                "size": 4.9,
+                "cost": 137300,
+                "cost_p_acre": 28020.41
+            },
+            "21": {
+                "size": 3.33,
+                "cost": 92340,
+                "cost_p_acre": 27729.73
+            },
+            "22": {
+                "size": 3.81,
+                "cost": 107220,
+                "cost_p_acre": 28141.73
+            },
+            "23": {
+                "size": 6.68,
+                "cost": 349460,
+                "cost_p_acre": 52314.37
+            },
+            "24": {
+                "size": 6.43,
+                "cost": 188560,
+                "cost_p_acre": 29325.04
+            },
+            "25": {
+                "size": 4.47,
+                "cost": 173560,
+                "cost_p_acre": 38827.74
+            }
+        },
+        "factory_pos": {
+            "app_pics/img_signs/arrow1.png_0": {
+                "image": "app_pics/img_signs/arrow1.png",
+                "pos": [
+                    767,
+                    723
+                ]
+            },
+            "app_pics/img_signs/arrow4.png_1": {
+                "image": "app_pics/img_signs/arrow4.png",
+                "pos": [
+                    1048,
+                    917
+                ]
+            }
+        }
+    }
+}

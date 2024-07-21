@@ -3,17 +3,16 @@ import os
 
 VERSION_NR = '0.0.8'
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 # Paths to dirs
 DIR_FONTS = os.path.join(os.path.dirname(__file__), 'app_fonts/')
 DIR_IMAGES = os.path.join(os.path.dirname(__file__), 'app_pics/')
 DIR_POPUPS = os.path.join(os.path.dirname(__file__), 'popups/')
-DIR_MAPS = os.path.join(os.path.dirname(__file__), 'files_data/data_game/maps/')
 DIR_LOGOS = os.path.join(os.path.dirname(__file__), 'app_pics/img_logos/')
-DIR_SIGNS = os.path.join(os.path.dirname(__file__), 'app_pics/img_signs/')
-DIR_SPLASH_SCR = os.path.join(os.path.dirname(__file__), 'app_pics/img_splashscreens/')
-DIR_TRUCKS = os.path.join(os.path.dirname(__file__), 'app_pics/img_trucks/')
+
+DIR_SIGNS = os.path.join(os.path.dirname(__file__), 'game_signs/game_signs/')
+
+DIR_MAPS = os.path.join(os.path.dirname(__file__), 'files_data/data_game/maps/')
+DIR_SPLASH_SCR = os.path.join(os.path.dirname(__file__), 'app_pics/app_splashscreens/')
 
 
 # Paths to images

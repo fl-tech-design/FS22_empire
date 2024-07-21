@@ -193,7 +193,7 @@ class StartPage(Screen):
                 self.app.popup_control.create_New_Game(self.scr_man)
             else:
                 self.app.start_Saved_Game(
-                    self.app.loaded_user_data_from_curr_player[self.app.curr_player][
+                    self.app.curr_userdata[self.app.curr_player][
                         "sa_games_data"
                     ][0]
                 )
@@ -202,7 +202,7 @@ class StartPage(Screen):
                 self.app.popup_control.create_New_Game()
             else:
                 self.app.start_Saved_Game(
-                    self.app.loaded_user_data_from_curr_player[self.app.curr_player][
+                    self.app.curr_userdata[self.app.curr_player][
                         "sa_games_data"
                     ][1]
                 )
@@ -211,7 +211,7 @@ class StartPage(Screen):
                 self.app.popup_control.create_New_Game()
             else:
                 self.app.start_Saved_Game(
-                    self.app.loaded_user_data_from_curr_player[self.app.curr_player][
+                    self.app.curr_userdata[self.app.curr_player][
                         "sa_games_data"
                     ][2]
                 )
@@ -220,7 +220,7 @@ class StartPage(Screen):
                 self.app.popup_control.create_New_Game()
             else:
                 self.app.start_Saved_Game(
-                    self.app.loaded_user_data_from_curr_player[self.app.curr_player][
+                    self.app.curr_userdata[self.app.curr_player][
                         "sa_games_data"
                     ][3]
                 )
@@ -229,7 +229,7 @@ class StartPage(Screen):
                 self.app.popup_control.create_New_Game()
             else:
                 self.app.start_Saved_Game(
-                    self.app.loaded_user_data_from_curr_player[self.app.curr_player][
+                    self.app.curr_userdata[self.app.curr_player][
                         "sa_games_data"
                     ][4]
                 )
