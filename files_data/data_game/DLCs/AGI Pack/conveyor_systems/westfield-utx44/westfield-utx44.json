@@ -1,0 +1,12 @@
+{
+    "westfield-utx44": {
+        "name": "Westfield UTX 44",
+        "description": "Westfield UTX 44 Förderbandsystem",
+        "price": "29'000",
+        "power": "40",
+        "fuel": "44",
+        "speed": "5",
+        "weight": "1.4",
+        "fields": "6"
+    }
+}

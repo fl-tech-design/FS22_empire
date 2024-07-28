@@ -1,9 +1,9 @@
 {
     "haut_beyleron": {
         "map_name": "Haut-Beyleron",
-        "img_map": "img_map_haut_beyleron.png",
-        "img_sel_map": "img_cho_haut_beyleron.png",
-        "img_spl_scr": "img_spl_haut_beyleron.png",
+        "img_map": "map_haut_beyleron.png",
+        "img_sel_map": "cho_haut_beyleron.png",
+        "img_spl_scr": "spl_haut_beyleron.png",
         "location": "france",
         "collect": "collect_h_bey",
         "num_of_fields": "48",
@@ -12,29 +12,32 @@
             {
                 "name": "gasstation_n",
                 "pos": [
-                    100,
-                    100
+                    460,
+                    940
                 ],
                 "img": "gasstation_n.png",
-                "img_icon": "img_sign_gasoil.png"
+                "icon_n": "sign_gasoil_n.png",
+                "icon_d": "sign_gasoil_d.png"
             },
             {
                 "name": "biogas",
                 "pos": [
-                    150,
-                    150
+                    480,
+                    800
                 ],
                 "img": "biogas.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "marissonne_north",
                 "pos": [
-                    200,
-                    150
+                    625,
+                    960
                 ],
                 "img": "marissonne_north.png",
-                "img_icon": "img_sign_trainstation.png"
+                "icon_n": "sign_trainstation_n.png",
+                "icon_d": "sign_trainstation_d.png"
             },
             {
                 "name": "rent_a_train_0",
@@ -43,7 +46,8 @@
                     150
                 ],
                 "img": "rent_a_train_0.png",
-                "img_icon": "img_sign_rent_a_train.png"
+                "icon_n": "sign_rent_a_train_n.png",
+                "icon_d": "sign_rent_a_train_d.png"
             },
             {
                 "name": "sawmill_north",
@@ -52,7 +56,8 @@
                     900
                 ],
                 "img": "sawmill_north.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "carpentry",
@@ -61,7 +66,8 @@
                     820
                 ],
                 "img": "carpentry.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "kalkstation_0",
@@ -70,7 +76,8 @@
                     750
                 ],
                 "img": "kalkstation_0.png",
-                "img_icon": "img_sign_buy.png"
+                "icon_n": "sign_buy_n.png",
+                "icon_d": "sign_buy_d.png"
             },
             {
                 "name": "trainstation_n_0",
@@ -79,7 +86,8 @@
                     690
                 ],
                 "img": "trainstation_n_0.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "trainstation_n_1",
@@ -88,7 +96,8 @@
                     700
                 ],
                 "img": "trainstation_n_1.png",
-                "img_icon": "img_sign_trainstation.png"
+                "icon_n": "sign_trainstation_n.png",
+                "icon_d": "sign_trainstation_d.png"
             },
             {
                 "name": "rent_a_train_1",
@@ -97,7 +106,8 @@
                     750
                 ],
                 "img": "rent_a_train_1.png",
-                "img_icon": "img_sign_rent_a_train.png"
+                "icon_n": "sign_rent_a_train_n.png",
+                "icon_d": "sign_rent_a_train_d.png"
             },
             {
                 "name": "kalkstation_1",
@@ -106,97 +116,88 @@
                     700
                 ],
                 "img": "kalkstation_1.png",
-                "img_icon": "img_sign_buy.png"
+                "icon_n": "sign_buy_n.png",
+                "icon_d": "sign_buy_d.png"
             },
             {
                 "name": "ghsb_getreidespeicher",
                 "pos": [
-                    1800,
+                    800,
                     680
                 ],
                 "img": "ghsb_getreidespeicher.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "spinery_la_filature",
                 "pos": [
-                    1750,
+                    750,
                     420
                 ],
                 "img": "spinery_la_filature.png",
-                "img_icon": "img_sign_sell.png"
-            },
-            {
-                "name": "spinery_la_filature",
-                "pos": [
-                    1750,
-                    420
-                ],
-                "img": "spinery_la_filature.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "vehicles_dealer",
                 "pos": [
-                    1750,
+                    700,
                     300
                 ],
                 "img": "vehicles_dealer.png",
-                "img_icon": "img_sign_shop.png"
+                "icon_n": "sign_shop_n.png",
+                "icon_d": "sign_shop_d.png"
             },
             {
                 "name": "gasstation_center",
                 "pos": [
-                    1660,
+                    650,
                     320
                 ],
                 "img": "gasstation_center.png",
-                "img_icon": "img_sign_gasoil.png"
+                "icon_n": "sign_gasoil_n_n.png",
+                "icon_d": "sign_gasoil_n_d.png"
             },
             {
                 "name": "fromage_de_lune",
                 "pos": [
-                    1460,
+                    600,
                     330
                 ],
                 "img": "fromage_de_lune.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "bakery_au_fournil",
                 "pos": [
-                    1300,
+                    550,
                     400
                 ],
                 "img": "bakery_au_fournil.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "getreidemühle",
                 "pos": [
-                    1300,
+                    500,
                     400
                 ],
                 "img": "getreidemühle.png",
-                "img_icon": "img_sign_sell.png"
-            },
-            {
-                "name": "getreidemühle",
-                "pos": [
-                    1300,
-                    400
-                ],
-                "img": "getreidemühle.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "shop_le_jardin",
                 "pos": [
-                    400,
-                    800
+                    350,
+                    820
                 ],
                 "img": "shop_le_jardin.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "raisins_factory",
@@ -205,7 +206,8 @@
                     800
                 ],
                 "img": "raisins_factory.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "stone_breaker",
@@ -214,7 +216,8 @@
                     500
                 ],
                 "img": "stone_breaker.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "livestock_market_0",
@@ -223,7 +226,8 @@
                     500
                 ],
                 "img": "livestock_market_0.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "livestock_market_1",
@@ -232,7 +236,8 @@
                     450
                 ],
                 "img": "livestock_market_1.png",
-                "img_icon": "img_sign_animals.png"
+                "icon_n": "sign_animals_n.png",
+                "icon_d": "sign_animals_d.png"
             },
             {
                 "name": "biogas_1mw",
@@ -241,7 +246,8 @@
                     200
                 ],
                 "img": "biogas_1mw.png",
-                "img_icon": "img_sign_sell.png"
+                "icon_n": "sign_sell_n.png",
+                "icon_d": "sign_sell_d.png"
             },
             {
                 "name": "biomethan",
@@ -250,7 +256,8 @@
                     180
                 ],
                 "img": "biomethan.png",
-                "img_icon": "img_sign_gasoil.png"
+                "icon_n": "sign_gasoil_n.png",
+                "icon_d": "sign_gasoil_d.png"
             },
             {
                 "name": "el_loading",
@@ -259,7 +266,8 @@
                     100
                 ],
                 "img": "el_loading.png",
-                "img_icon": "img_sign_el_loading.png"
+                "icon_n": "sign_el_loading_n.png",
+                "icon_d": "sign_el_loading_d.png"
             },
             {
                 "name": "gasstation_south",
@@ -268,7 +276,8 @@
                     100
                 ],
                 "img": "gasstation_south.png",
-                "img_icon": "img_sign_gasoil.png"
+                "icon_n": "sign_gasoil_n.png",
+                "icon_d": "sign_gasoil_d.png"
             },
             {
                 "name": "kalkstation_2",
@@ -277,7 +286,8 @@
                     100
                 ],
                 "img": "kalkstation_2.png",
-                "img_icon": "img_sign_buy.png"
+                "icon_n": "sign_buy_n.png",
+                "icon_d": "sign_buy_d.png"
             },
             {
                 "name": "trainstation_s_0",
@@ -286,7 +296,8 @@
                     100
                 ],
                 "img": "trainstation_s_0.png",
-                "img_icon": "img_sign_unload.png"
+                "icon_n": "sign_unload_n.png",
+                "icon_d": "sign_unload_d.png"
             },
             {
                 "name": "trainstation_s_1",
@@ -295,16 +306,8 @@
                     60
                 ],
                 "img": "trainstation_s_1.png",
-                "img_icon": "img_sign_trainstation.png"
-            },
-            {
-                "name": "trainstation_s_1",
-                "pos": [
-                    660,
-                    60
-                ],
-                "img": "trainstation_s_1.png",
-                "img_icon": "img_sign_trainstation.png"
+                "icon_n": "sign_trainstation_n.png",
+                "icon_d": "sign_trainstation_d.png"
             },
             {
                 "name": "rent_a_train_2",
@@ -313,7 +316,8 @@
                     60
                 ],
                 "img": "rent_a_train_2.png",
-                "img_icon": "img_sign_rent_a_train.png"
+                "icon_n": "sign_rent_a_train_n.png",
+                "icon_d": "sign_rent_a_train_d.png"
             },
             {
                 "name": "marissonne_south",
@@ -322,7 +326,8 @@
                     100
                 ],
                 "img": "marissonne_south.png",
-                "img_icon": "img_sign_trainstation.png"
+                "icon_n": "sign_trainstation_n.png",
+                "icon_d": "sign_trainstation_d.png"
             },
             {
                 "name": "farmhouse_0",
@@ -331,7 +336,8 @@
                     500
                 ],
                 "img": "farmhouse_0.png",
-                "img_icon": "img_sign_home.png"
+                "icon_n": "sign_home_n.png",
+                "icon_d": "sign_home_d.png"
             }
         ],
         "lands": {

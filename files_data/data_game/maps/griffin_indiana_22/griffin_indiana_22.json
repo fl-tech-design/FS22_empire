@@ -1,9 +1,9 @@
 {
     "griffin_indiana_22": {
         "map_name": "Griffin Indiana 22",
-        "img_map": "img_map_griffin_indiana_22.png",
-        "img_sel_map": "img_cho_griffin_indiana_22.png",
-        "img_spl_scr": "img_spl_griffin_indiana_22.png",
+        "img_map": "map_griffin_indiana_22.png",
+        "img_sel_map": "cho_griffin_indiana_22.png",
+        "img_spl_scr": "spl_griffin_indiana_22.png",
         "info_map": [
             "18 Waggons",
             "15 Minuten Zugintervall",

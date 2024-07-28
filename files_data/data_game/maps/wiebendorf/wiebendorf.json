@@ -1,9 +1,9 @@
 {
     "wiebendorf": {
         "map_name": "Wiebendorf",
-        "img_map": "img_map_wiebendorf.png",
-        "img_sel_map": "img_cho_wiebendorf.png",
-        "img_spl_scr": "img_spl_wiebendorf.png",
+        "img_map": "map_wiebendorf.png",
+        "img_sel_map": "cho_wiebendorf.png",
+        "img_spl_scr": "spl_wiebendorf.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

@@ -1,0 +1,13 @@
+{
+    "storm-fxseedtreater": {
+        "name": "Storm FX Seed Treater",
+        "description": "Storm FX Seed Treater Förderbandsystem",
+        "price": "37'000",
+        "capacity": "50",
+        "power": "33",
+        "fuel": "40",
+        "speed": "5",
+        "weight": "1.4",
+        "fields": "6"
+    }
+}

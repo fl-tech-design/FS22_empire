@@ -1,0 +1,24 @@
+{
+    "descr_agi_pack": "Neue Maschinen für euer Getreide: Holt euch eine Reihe hochwertiger Geräte und Anlagen von AGI - einem führenden Hersteller von mobilen und stationären Geräten zur Getreideverarbeitung, -lagerung und -aufbereitung. Das kostenlose Download-Pack enthält Förderbänder, Getreidespeicher sowie eine Beizmaschine und mehr.Mit dem AGI STORM FX bereitet ihr Getreidesamen für die Aussaat vor und produziert damit euer eigenes Saatgut. Anschließend verarbeiten ihr das Getreide mit Hilfe verschiedener Geräte von AGI-Marken wie Batco oder Westfield und lagert es sicher in Behältern und Garagen der Produktlinien Sentinel und Westeel. Macht euren Betrieb zum Musterbeispiel für Getreideproduktion!",
+    "shop_cat": [
+        "conveyor_systems",
+        "halls",
+        "silos"
+    ],
+    "conveyor_systems": [
+        "batco_bcx_1549",
+        "storm-fxseedtreater",
+        "westfield-mkx1394",
+        "westfield-stx1051",
+        "westfield-utx44"
+    ],
+    "halls": [
+        "sentinel-garage"
+    ],
+    "silos": [
+        "flatbottombinnecodryer",
+        "westeel-flatbottombin",
+        "westeel-hopperbin",
+        "westeel-smoothwallbin"
+    ]
+}

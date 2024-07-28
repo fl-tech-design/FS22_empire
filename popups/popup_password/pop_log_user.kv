@@ -1,0 +1,47 @@
+<Pop_Login@Popup>:
+    auto_dismiss: False
+    title: app.f_let_upper(app.lab_txt["verbs"]['login'])
+    size_hint: (0.3, 0.2)
+
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.DIR_FONTS + constants.TITLEFONT
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxGrey1:
+        orientation: 'vertical'
+        padding: 2
+        spacing: 2
+        LabelTitel:
+            id: lab_u_name
+            text: app.user_name
+            color: fs22_d
+        TextInput:
+            id: password_input
+            hint_text: app.lab_txt["nouns"]["password"].split()[1]
+            hint_text_color: fs22_d
+            background_color: grey2
+            cursor_color: fs22_n
+            foreground_color: fs22_d
+            font_size: self.height * 0.5
+            padding: 10, 10, 0, 0
+            password: True
+            multiline: False
+        BoxGrey1:
+            padding: 4
+            spacing: 4
+            ButRectThin:
+                id: login_button
+                text: app.f_let_upper(app.lab_txt["verbs"]['login'])
+                font_size: self.height * 0.5
+                halign: 'center'
+                on_release: root.validate_user()
+            ButRectThin:
+                id: cancel_button
+                text: app.f_let_upper(app.lab_txt["verbs"]['cancel'])
+                font_size: self.height * 0.5
+                halign: 'center'
+                on_release: root.dismiss()
+
+

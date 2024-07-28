@@ -1,26 +1,39 @@
-# pagemaingame.py
-
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-
-from constants import PATH_KV_PAGEMAINGAME
-
+from constants import PATH_KV_PAGEMAINGAME, DIR_MAPS
+from popups.pop_set_clock.pop_set_clock import Pop_Set_Clock
 
 Builder.load_file(PATH_KV_PAGEMAINGAME)
 
 
-class StartPageUpdater:
+class MainPageUpdater:
     def __init__(self, app, ids):
         self.app = app
         self.ids = ids
+        self.ids.box_bot_maingame.ids.but_1.bind(on_release=lambda dt: self.app.change_Screen("left", "page_start"))
+        self.map_path = f"{DIR_MAPS}{list(self.app.map_data.keys())[0]}/map_{list(self.app.map_data.keys())[0]}.png"
+        self.ids.box_map.ids.img_game_map.source = self.map_path
 
     def update(self):
         self.upd_box_title()
-    
+        self.upd_box_map()
+        self.upd_box_bott()
+
     def upd_box_title(self):
-        self.ids.box_tit_maingame.ids.lab_tit.text = self.app.f_let_upper(self.app.lab_txt["app"]["main_menu"])
-        self.ids.box_bot_maingame.ids.but_1.text = self.app.f_let_upper(self.app.lab_txt["app"]["logout"])
-        self.ids.box_bot_maingame.ids.but_2.text = self.app.f_let_upper(self.app.lab_txt["app"]["quit"])
+        self.ids.box_tit_maingame.ids.lab_tit.text = self.app.f_let_upper(
+            self.app.lab_txt["app"]["main_menu"]
+        )
+
+    def upd_box_map(self):
+        self.ids.box_map.ids.b_open_map.text = self.app.lab_txt["app"]["open_map"]
+
+    def upd_box_bott(self):
+        self.ids.box_bot_maingame.ids.but_1.text = self.app.f_let_upper(
+            self.app.lab_txt["app"]["logout"]
+        )
+        self.ids.box_bot_maingame.ids.but_2.text = self.app.f_let_upper(
+            self.app.lab_txt["app"]["quit"]
+        )
 
 
 class PageMainGame(Screen):
@@ -28,22 +41,15 @@ class PageMainGame(Screen):
         super(PageMainGame, self).__init__(**kwargs)
         self.app = app
         self.scr_man = scr_man
-        # GameTime vars
-        self.clock_set_stat = False
-        self.time_scale = 1
-        self.time_game_h = 0
-        self.time_game_m = 0
-        self.loop_counter = 0
-        self.upd_Page_Main_Game()
+        self.ids.box_map.ids.b_open_map.bind(on_release=self.open_Map_Page)
 
     def upd_Page_Main_Game(self):
-        updater = StartPageUpdater(self.app, self.ids)
+        updater = MainPageUpdater(self.app, self.ids)
         updater.update()
-        if self.clock_set_stat:
-            if self.loop_counter % 300 / self.time_scale == 1:
-                self.time_game_m += 1
-                if self.time_game_m >= 59:
-                    self.time_game_m = 0
-                    self.time_game_h += 1
-                    if self.time_game_h > 23:
-                        self.time_game_h = 0
+
+    def set_Game_Time(self):
+        pop = Pop_Set_Clock(self.app)
+        pop.open()
+
+    def open_Map_Page(self, *args):
+        self.app.change_Screen("right", "page_game_map")

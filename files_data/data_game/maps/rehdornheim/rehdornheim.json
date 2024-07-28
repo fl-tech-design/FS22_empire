@@ -1,9 +1,9 @@
 {
     "rehdornheim": {
         "map_name": "Rehdornheim",
-        "img_map": "img_map_rehdornheim.png",
-        "img_sel_map": "img_cho_rehdornheim.png",
-        "img_spl_scr": "img_spl_rehdornheim.png",
+        "img_map": "map_rehdornheim.png",
+        "img_sel_map": "cho_rehdornheim.png",
+        "img_spl_scr": "spl_rehdornheim.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

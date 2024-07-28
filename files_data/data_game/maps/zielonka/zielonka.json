@@ -1,9 +1,9 @@
 {
     "zielonka": {
         "map_name": "Zielonka",
-        "img_map": "img_map_zielonka.png",
-        "img_sel_map": "img_cho_zielonka.png",
-        "img_spl_scr": "img_spl_zielonka.png",
+        "img_map": "map_zielonka.png",
+        "img_sel_map": "cho_zielonka.png",
+        "img_spl_scr": "spl_zielonka.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

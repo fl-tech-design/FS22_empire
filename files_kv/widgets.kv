@@ -1,4 +1,55 @@
 # widgets.kv
+<GameClockWidget@BoxBlack>:
+    padding: 2
+    BoxGrey1:
+        padding: 2
+        BoxGrey2:
+            padding: 2
+# Start ClockWidget         
+            BoxGrey3:
+                padding: 2
+                spacing: 2
+                BoxBlack:
+                    # Box für analoge uhr
+                BoxBlack:
+                    # Box für digitale Uhr und Zeitskalierung
+                
+
+<BackgroundWidget@Widget>:
+    id: map_widget
+    Image:
+        id: i_map
+        size: self.parent.size
+        pos: self.parent.pos
+
+    BoxLayout:
+        id: button_box
+        size_hint: None, None
+        size: root.size
+        pos: root.pos
+
+
+<GameMapWidget@BoxBlack>:
+    padding: 2
+    BoxGrey1:
+        padding: 2
+        BoxGrey2:
+            padding: 2
+# Start ImageBox
+            BoxGrey3:
+                orientation: 'vertical'
+                padding: 1
+                spacing: 3
+                BoxBlack:
+                    padding: 0, 4, 0, 4
+                    Image:
+                        id: img_game_map
+                BoxBlack:
+                    size_hint_y: 0.1
+                    ButClear:
+                        id: b_open_map
+
+
 <BoxShowSavedGames@BoxBlack>:
     BoxGrey1:
         padding: 1
@@ -27,32 +78,40 @@
                         spacing: 2
 # Box Row 1: saved game name
                         BoxBlack:
+# Labeltitle: game name.                        
                             LabJuraMedium:
                                 id: l_tit_g_name
                                 color: fs22_d
+# Labelvalue: game name
                             LabJuraLight:
                                 id: l_g_name
 # Box Row 2
                         BoxBlack:
+# Labeltitle: last save
                             LabJuraMedium:
                                 id: l_tit_last_save
                                 color: fs22_d
+# Labelvalue: last save
                             LabJuraLight:
                                 id: l_last_save
 # Box Row 3
                         BoxBlack:
+# Labeltitle: total playtime                        
                             LabJuraMedium:
                                 id: l_tit_tot_playtime
                                 color: fs22_d
+# Labelvalue: total playtime
                             LabJuraLight:
                                 id: l_tot_playtime
 # Box Row 4
                         BoxBlack:
+# Labeltitle: current cash                         
                             LabJuraMedium:
-                                id: l_tit_tot_playtime
+                                id: l_tit_curr_cash
                                 color: fs22_d
+# Labelvalue: current cash
                             LabJuraLight:
-                                id: l_tot_playtime
+                                id: l_curr_cash
 # Box Buttons                    
                     BoxBlack:
                         orientation: 'vertical'
@@ -237,7 +296,6 @@
             ButtonGrey:
                 id: but_1
                 font_size: self.height * 0.5
-                on_release: app.change_Screen('left', 'page_settings') if app.scr_man.current == 'page_start' else app.change_Screen('right', 'page_start')
 # Box Button right in Bottombox            
         BoxBlack:
             size_hint_x: 0.3

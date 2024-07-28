@@ -1,9 +1,9 @@
 {
     "balkanska_farma": {
         "map_name": "Balkanska Farma",
-        "img_map": "img_map_balkanska_farma.png",
-        "img_sel_map": "img_cho_balkanska_farma.png",
-        "img_spl_scr": "img_spl_balkanska_farma.png",
+        "img_map": "map_balkanska_farma.png",
+        "img_sel_map": "cho_balkanska_farma.png",
+        "img_spl_scr": "spl_balkanska_farma.png",
         "location": "Balkan",
         "sammelobjekte": "",
         "num_of_fields": "50",

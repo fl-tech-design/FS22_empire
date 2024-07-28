@@ -1,9 +1,9 @@
 {
     "sosnovka": {
         "map_name": "Sosnovka",
-        "img_map": "img_map_sosnovka.png",
-        "img_sel_map": "img_cho_sosnovka.png",
-        "img_spl_scr": "img_spl_sosnovka.png",
+        "img_map": "map_sosnovka.png",
+        "img_sel_map": "cho_sosnovka.png",
+        "img_spl_scr": "spl_sosnovka.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

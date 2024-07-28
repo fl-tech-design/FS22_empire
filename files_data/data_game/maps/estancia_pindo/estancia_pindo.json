@@ -1,9 +1,9 @@
 {
     "estancia_pindo": {
         "map_name": "Estancia Pindorama MT",
-        "img_map": "img_map_estancia_pindo.png",
-        "img_sel_map": "img_cho_estancia_pindo.png",
-        "img_spl_scr": "img_spl_estancia_pindo.png",
+        "img_map": "map_estancia_pindo.png",
+        "img_sel_map": "cho_estancia_pindo.png",
+        "img_spl_scr": "spl_estancia_pindo.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

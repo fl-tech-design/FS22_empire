@@ -1,9 +1,9 @@
 {
     "observatorium": {
         "map_name": "Observatorium Gedenkkarte",
-        "img_map": "img_map_observatorium.png",
-        "img_sel_map": "img_cho_observatorium.png",
-        "img_spl_scr": "img_spl_observatorium.png",
+        "img_map": "map_observatorium.png",
+        "img_sel_map": "cho_observatorium.png",
+        "img_spl_scr": "spl_observatorium.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

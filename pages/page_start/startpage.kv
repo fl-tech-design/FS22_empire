@@ -49,7 +49,7 @@
                                     ButRectThin:
                                         id: but_uname_1
                                         color: grey4
-                                        on_release: root.set_User(self.text)
+                                        on_release: root.userbut_Pressed(self.text)
 # Box Button User 2                                    
                                 BoxBlack:
                                     size_hint_y: 0.1
@@ -57,7 +57,7 @@
                                     ButRectThin:
                                         id: but_uname_2
                                         color: grey4
-                                        on_release: root.set_User(self.text)
+                                        on_release: root.userbut_Pressed(self.text)
 # Button User 3
                                 BoxBlack:
                                     size_hint_y: 0.1
@@ -65,7 +65,7 @@
                                     ButRectThin:
                                         id: but_uname_3
                                         color: grey4
-                                        on_release: root.set_User(self.text)
+                                        on_release: root.userbut_Pressed(self.text)
 # Box Button User 4 
                                 BoxBlack:
                                     size_hint_y: 0.1
@@ -73,7 +73,7 @@
                                     ButRectThin:
                                         id: but_uname_4
                                         color: grey4
-                                        on_release: root.set_User(self.text)
+                                        on_release: root.userbut_Pressed(self.text)
 # Box Button User 5
                                 BoxBlack:
                                     size_hint_y: 0.1
@@ -81,7 +81,7 @@
                                     ButRectThin:
                                         id: but_uname_5
                                         color: grey4
-                                        on_release: root.set_User(self.text)
+                                        on_release: root.userbut_Pressed(self.text)
 # Box Userinfo. defined in widgts.kv as BoxInfo
                         BoxInfo:
                             id: box_u_info            
@@ -114,7 +114,7 @@
                                     ButRoundThin:
                                         id: but_new_user
                                         font_size: self.height * 0.6
-                                        on_release: app.popup_control.open_reg_user_popup()
+                                        on_release: root.create_New_User()
 ###########
 # Box Right   
 ###########             

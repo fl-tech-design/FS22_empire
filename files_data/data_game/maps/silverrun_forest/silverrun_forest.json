@@ -1,9 +1,9 @@
 {
     "silverrun_forest": {
         "map_name": "Silverrun Forest",
-        "img_map": "img_map_silverrun_forest.png",
-        "img_sel_map": "img_cho_silverrun_forest.png",
-        "img_spl_scr": "img_spl_silverrun_forest.png",
+        "img_map": "map_silverrun_forest.png",
+        "img_sel_map": "cho_silverrun_forest.png",
+        "img_spl_scr": "spl_silverrun_forest.png",
         "location": "",
         "num_of_fields": "",
         "factory_pos": {

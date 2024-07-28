@@ -1,9 +1,8 @@
 from kivy.uix.popup import Popup
-from kivy.uix.image import Image
-from kivy.core.window import Window
+
 from kivy.lang import Builder
 
-from constants import DIR_POPUPS, DIR_IMAGES, PATH_DIR_IMG_CHO
+from constants import DIR_POPUPS
 
 Builder.load_file(DIR_POPUPS + "popup_help/popup_help.kv")
 

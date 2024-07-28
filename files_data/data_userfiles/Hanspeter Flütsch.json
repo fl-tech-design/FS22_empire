@@ -1,0 +1,34 @@
+{
+    "uname": "Hanspeter Fl\u00fctsch",
+    "password": "$2b$12$kFYYN6g1mjYsZViXyT/fGuNoO94jgbJkCE/25827nJKW22Xg6Ilke",
+    "crea_date": "2024-07-27_19:13:58",
+    "last_login": "2024-07-27_19:13:58",
+    "sa_games": "0",
+    "pl_games": "0",
+    "last_game": "",
+    "tot_p_time": "00:00",
+    "s_g_names": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "sa_games_data": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "curr_g_name": "",
+    "curr_game_data": {
+        "map_name": "",
+        "curr_player": "",
+        "tot_p_time": "0",
+        "number_of_sa_games": 0,
+        "last_save": "",
+        "days_per_month": 1,
+        "time_scale": 5
+    }
+}

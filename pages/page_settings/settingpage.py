@@ -11,6 +11,7 @@ class SettingPage(Screen):
         super(SettingPage, self).__init__(**kwargs)
         self.app = app
         self.admin_state = 0
+        self.ids.box_bottom.ids.but_1.bind(on_release=lambda dt: self.app.change_Screen("left", "page_start"))
 
     def update_page_settings(self):
         self.set_Admin_But_State()

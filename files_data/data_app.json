@@ -4,19 +4,8 @@
     "admin_pw": "admin",
     "admin_state": 0,
     "curr_language": "de",
-    "curr_g_name": "",
-    "curr_game_data": {
-        "curr_map_name": "",
-        "curr_player": "",
-        "tot_p_time": "0",
-        "number_of_sa_games": 0,
-        "last_save": "",
-        "days_per_month": 1,
-        "time_scale": 1
-    },
-    "curr_player_name": "Hanspeter Fl\u00fctsch",
-    "security_state": 0,
-    "saved_players": [
+    "user_name": "",
+    "user_list": [
         "Hanspeter Fl\u00fctsch",
         "",
         "",
